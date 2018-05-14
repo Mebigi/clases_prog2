@@ -20,6 +20,16 @@ int main()
 
     printf("\nvalor punteroEntero-1: %d", punteroEntero-1);
 
+    punteroEntero=punteroEntero+1;
+    printf("\nvalor punteroEntero: %d", punteroEntero);
+
+    //0x26
+    //0x30 3
+    //0x38 9
+    //0x425
+    //int vector[3];  printf("\n%d", vector[0]);//puntero
+    // printf("\n%d", vector[1]);//puntero en 1
+
     /*
     printf("\nvalor punteroEntero antes de asignar: %p", punteroEntero);// ajo con esto porque tira cualquier cosa antes de asignar
     printf("\nvalor punteroEntero  antes de asignar: con & %p", &punteroEntero);
