@@ -12,7 +12,7 @@ int main()
     int* punteroArray = NULL;
     printf("\nel valor puntero %p:", punteroArray);
 
-    punteroArray=Array;
+    punteroArray=Array;// no uso & en este caso porque como es un array el nombre ya indica una direccion de memoria
 
     CargarArray(punteroArray, TAM);
     OrdenarArray(punteroArray, TAM);
