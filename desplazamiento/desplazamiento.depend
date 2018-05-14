@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1526307209 source:c:\test\mercedesbigi\clases_prog2\desplazamiento\main.c
+	<stdio.h>
+	<stdlib.h>
+
