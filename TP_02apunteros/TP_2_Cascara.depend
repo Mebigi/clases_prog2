@@ -68,3 +68,17 @@
 	<string.h>
 	<ctype.h>
 
+1526932006 source:c:\1ercuatrimestretecnicatura\clases_prog2\tp_02apunteros\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1526932000 c:\1ercuatrimestretecnicatura\clases_prog2\tp_02apunteros\funciones.h
+
+1526932045 source:c:\1ercuatrimestretecnicatura\clases_prog2\tp_02apunteros\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+

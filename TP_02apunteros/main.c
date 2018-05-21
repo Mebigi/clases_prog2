@@ -101,6 +101,7 @@ int main()
         case 3:
 
             imprimirListadoPersonas(listadoPersonas, TAM);
+            CrearArchivoListadoPersonas(listadoPersonas, TAM);
 
             break;
         case 4:

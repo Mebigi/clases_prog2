@@ -140,5 +140,14 @@ int esTexto(char []);
 char* FormatoNombre(char [], int );
 
 
+/** \brief Imprime en file por nombre los datos de personas en lista (Array) cuyo tipo de dato es una estrctura EPersona.
+ * @param lista el array se pasa como parametro.
+ * @param tamaño del array.
+
+ */
+
+void CrearArchivoListadoPersonas(EPersona *, int tam);
+
+
 
 #endif // FUNCIONES_H_INCLUDED

@@ -448,3 +448,50 @@ int esTexto(char texto[])
 }
 
 
+void CrearArchivoListadoPersonas(EPersona *lista, int tam)
+{
+
+    FILE* listadoPersonas;
+    int i;
+    int flag= 0;
+
+    listadoPersonas= fopen("ListadoPersonas.txt", "w");
+
+    for(int i=0; i<tam; i++)
+    {
+       FormatoNombre((lista+i)->nombre, tam);
+    }
+
+    ordenarListadoPersonas(lista, tam);
+
+
+
+
+    fprintf(listadoPersonas, "_______________________________________________________\n");
+
+
+
+    for(i=0; i<tam; i++)
+    {
+        if((lista+i)->estado==1)
+        {
+
+            fprintf(listadoPersonas, "\n%s\t\t\%ld\t%d \n", (lista+i)->nombre, (lista+i)->dni, (lista+i)->edad);
+            flag = 1;
+
+
+        }
+    }
+    if(flag == 0)
+    {
+        fprintf(listadoPersonas, "\nNo existen registros cargados\n");
+    }
+
+    fprintf(listadoPersonas,"_______________________________________________________\n");
+
+    fclose(listadoPersonas);
+
+}
+
+
+
