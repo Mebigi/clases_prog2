@@ -7,7 +7,7 @@
 
 
 
-void cargarDatosHardCode(EPersona *lista[])
+void cargarDatosHardCode(EPersona *lista)
 {
     long int dni[15]= {24083235,39457791,27775664,51789936,36896235,24083231,39457792,27775663,51789936,36896234,22083235,33457791,24775664,55789936,37896235};
     char nombre[15][50]= {"mercedes BIGI","Micaela Colella","Galo Matos","Martin Gerbasi","Paula Bigi","Facundo Musil","Gabriela Perez","Lucia Rodriguez","Adrian Alzaroli","Viviana Musil","Pablo Callejo","Alejandra Arrue", "Laura Lertora","Hugo Viere", "Aldo Liendo"};
@@ -16,22 +16,22 @@ void cargarDatosHardCode(EPersona *lista[])
 
     for(int i=0; i<15; i++)
     {
-        strcpy(lista[i]->nombre, nombre[i]);
-        lista[i]->dni=dni[i];
-        lista[i]->edad=edad[i];
-        lista[i]->estado=estado[i];
+        strcpy((lista+i)->nombre, nombre[i]);
+        (lista+i)->dni=dni[i];
+        (lista+i)->edad=edad[i];
+        (lista+i)->estado=estado[i];
 
     }
 }
 
 
-int obtenerEspacioLibre(EPersona *lista[], int tam)
+int obtenerEspacioLibre(EPersona *lista, int tam)
 {
     int index = -1;
 
     for(int i=0; i<tam; i++)
     {
-        if(lista[i]->dni==0)
+        if((lista+i)->dni==0)
         {
             index=i;
             break;
@@ -43,7 +43,7 @@ int obtenerEspacioLibre(EPersona *lista[], int tam)
 
 
 
-void cargarPersona(EPersona lista[], int index, int tam)
+void cargarPersona(EPersona *lista, int index, int tam)
 {
     int controlarDni;
     long int dni=0;
@@ -63,20 +63,17 @@ void cargarPersona(EPersona lista[], int index, int tam)
     if(controlarDni == -1 && dni > 0)
     {
 
-        lista[index].dni=dni;
-
+        (lista+index)->dni=dni;
         fflush(stdin);
-
-
         printf("\nIngrese Nombre: ");
-        gets(lista[index].nombre);
-        estexto= esTexto(lista[index].nombre);
+        gets((lista+index)->nombre);
+        estexto= esTexto((lista+index)->nombre);
 
         while (estexto==0)
         {
             printf("\nReigrese Nombre: ");
-            gets(lista[index].nombre);
-            estexto= esTexto(lista[index].nombre);
+            gets((lista+index)->nombre);
+            estexto= esTexto((lista+index)->nombre);
         }
 
 
@@ -84,11 +81,8 @@ void cargarPersona(EPersona lista[], int index, int tam)
 
         fflush(stdin);
         printf("\nIngrese Edad: ");
-        lista[index].edad=IngresarEntero(1,150); // segun Google 146 años el hombre mas viejo
-
-
-
-        lista[index].estado = 1;
+        (lista+index)->edad=IngresarEntero(1,150); // segun Google 146 años el hombre mas viejo
+        (lista+index)->estado = 1;
 
 
     }
@@ -97,14 +91,14 @@ void cargarPersona(EPersona lista[], int index, int tam)
 
 
 
-void imprimirListadoPersonas (EPersona lista[], int tam)
+void imprimirListadoPersonas(EPersona *lista, int tam)
 {
     int i;
     int flag= 0;
 
     for(int i=0; i<tam; i++)
     {
-       FormatoNombre(lista[i].nombre, tam);
+       FormatoNombre((lista+i)->nombre, tam);
     }
 
     ordenarListadoPersonas(lista, tam);
@@ -118,10 +112,10 @@ void imprimirListadoPersonas (EPersona lista[], int tam)
 
     for(i=0; i<tam; i++)
     {
-        if(lista[i].estado==1)
+        if((lista+i)->estado==1)
         {
 
-            printf("\n%s\t\t\%ld\t%d \n", lista[i].nombre, lista[i].dni, lista[i].edad);
+            printf("\n%s\t\t\%ld\t%d \n", (lista+i)->nombre, (lista+i)->dni, (lista+i)->edad);
             flag = 1;
 
 
@@ -139,14 +133,14 @@ void imprimirListadoPersonas (EPersona lista[], int tam)
 
 
 
-int buscarPorDni(EPersona lista[], int tam, long int dni)
+int buscarPorDni(EPersona *lista, int tam, long int dni)
 {
     int index = -1;
 
 
     for(int i=0; i<tam; i++)
     {
-        if(lista[i].dni==dni)
+        if((lista+i)->dni==dni)
         {
             index = i;
         }

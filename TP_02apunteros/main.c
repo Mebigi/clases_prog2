@@ -39,11 +39,9 @@ Gráfico para una estadística de 6 personas con edad menor a 18, 4 personas con e
 int main()
 {
     EPersona listadoPersonas[TAM] = {0};
-    EPersona* punterolistadoPersonas[TAM];
 
-    *punterolistadoPersonas=listadoPersonas;
 
-    cargarDatosHardCode(punterolistadoPersonas);
+    cargarDatosHardCode(listadoPersonas);
 
 
     int index;
@@ -67,10 +65,10 @@ int main()
         switch(opcion)
         {
         case 1:
-            index= obtenerEspacioLibre(punterolistadoPersonas, TAM);
+            index= obtenerEspacioLibre(listadoPersonas, TAM);
             if (index != -1)
             {
-                cargarPersona(punterolistadoPersonas, index, TAM);
+                cargarPersona(listadoPersonas, index, TAM);
             }
             else
             {
@@ -85,13 +83,13 @@ int main()
             dni= IngresarDNI();
 
 
-            index = buscarPorDni(punterolistadoPersonas, TAM, dni);
+            index = buscarPorDni(listadoPersonas, TAM, dni);
 
             if (index != -1)
             {
                 printf("Se borr%c el registro con DNI Nro: %ld", 162, dni);
-                punterolistadoPersonas[index]->dni = 0;//
-                punterolistadoPersonas[index]->estado = 0;//
+                listadoPersonas[index].dni = 0;//
+                listadoPersonas[index].estado = 0;//
             }
             else
             {
@@ -102,11 +100,11 @@ int main()
             break;
         case 3:
 
-            imprimirListadoPersonas(punterolistadoPersonas, TAM);
+            imprimirListadoPersonas(listadoPersonas, TAM);
 
             break;
         case 4:
-            GraficoListadoPersonas(punterolistadoPersonas, TAM);
+            GraficoListadoPersonas(listadoPersonas, TAM);
             break;
         case 5:
             seguir = 'n';

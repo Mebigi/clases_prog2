@@ -19,7 +19,7 @@ typedef struct {
  * @return
  */
 
-void cargarDatosHardCode(EPersona *[]);
+void cargarDatosHardCode(EPersona *);
 
 /**
  * Obtiene el primer indice sin datos del array.
@@ -27,7 +27,7 @@ void cargarDatosHardCode(EPersona *[]);
  * @return el primer indice disponible
  */
 
-int obtenerEspacioLibre(EPersona *lista[], int);
+int obtenerEspacioLibre(EPersona *lista, int);
 
 /**
  * Obtiene el indice que coincide con el dni (clave primaria) pasado por parametro.
@@ -47,7 +47,7 @@ int buscarPorDni(EPersona [], int, long int);
 
  */
 
-void cargarPersona(EPersona [], int, int);
+void cargarPersona(EPersona *, int, int);
 
 /**
  * Ordena por nombre los datos de personas en lista (Array) cuyo tipo de dato es una estrctura EPersona
@@ -67,7 +67,7 @@ void ordenarListadoPersonas (EPersona [], int );
 
  */
 
-void imprimirListadoPersonas (EPersona [], int );
+void imprimirListadoPersonas (EPersona *, int );
 
 /**
  * Grafica en consola por nombre los datos de personas en lista (Array) cuyo tipo de dato es una estrctura EPersona
