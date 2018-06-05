@@ -34,6 +34,7 @@ Employee* employee_new(void);
 void employee_delete(Employee* this);
 int employee_setId(Employee* this, int id);
 int employee_getId(Employee* this);
+int employee_SetName(Employee* this, char* texto);
 
 
 int parserEmployee(char [], ArrayList* pArrayListEmployee);
@@ -41,6 +42,8 @@ int parserEmployee(char [], ArrayList* pArrayListEmployee);
 void employees_print_all(ArrayList* pArrayListEmployee);
 
 char* employee_getName(Employee* this);
+
+void employees_sort(ArrayList* pArrayListEmployee, int );
 
 #endif // _EMPLOYEE_H
 

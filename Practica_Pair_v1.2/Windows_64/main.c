@@ -3,6 +3,7 @@
 #include "ArrayList.h"
 #include "parser.h"
 #include "Employee.h"
+#include "ingresodatos.h"
 
 /****************************************************
     Menu:
@@ -14,8 +15,7 @@
         6. Listar Empleados (Desde/Hasta)
 *****************************************************/
 
-int IngresarEntero(char [], int, int);
-int validarEntero (int , int , int );
+
 int main()
 {
     ArrayList* listaEmpleados;
@@ -43,7 +43,7 @@ int main()
         printf("6. Listar Empleados (Desde/Hasta)\n");
         printf("7. Salir\n");
 
-        opcion = IngresarEntero("\nIngrese una OPCION", 1, 5);
+        opcion = IngresarEntero("\nIngrese una OPCION\n", 1, 5);
 
         switch(opcion)
         {
@@ -54,9 +54,13 @@ int main()
                 employees_print_all(listaEmpleados);
                 break;
             case 3:
-                employees_sort(listaEmpleados, 1);
+                //employees_sort(listaEmpleados, 1);
+                al_sort(listaEmpleados,employee_compare,0);
                break;
             case 4:
+                employees_add(listaEmpleados);
+
+                //
                 break;
             case 5:
                break;
@@ -72,30 +76,7 @@ int main()
 }
 
 
-int IngresarEntero(char mensaje[], int min, int max)
-{
-    int entero;
-    puts(mensaje);
-    fflush(stdin);
-    scanf("%d",&entero);
-    entero = validarEntero(entero, min, max);
 
-    return entero;
-}
-int validarEntero (int dato, int min, int max)
-{
-    while(dato < min || dato > max)
-    {
-
-        fflush(stdin);
-        printf("Dato no v%clido reingresar: ", 160);
-        scanf("%d", &dato);
-
-    }
-
-    return dato;
-
-}
 
 
 

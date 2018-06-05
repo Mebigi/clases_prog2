@@ -72,29 +72,41 @@
 
 1528201099 c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\parser.h
 
-1528147756 source:c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\employee.c
+1528238354 source:c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\employee.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
 	"Employee.h"
+	"ingresodatos.h"
 
 1528147756 c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\arraylist.h
 
-1528147756 c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\employee.h
+1528238151 c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\employee.h
 
-1528156320 source:c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\main.c
+1528237679 source:c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\main.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
 	"parser.h"
 	"Employee.h"
+	"ingresodatos.h"
 
 1528147757 c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\parser.h
 
-1528156164 source:c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\parser.c
+1528223015 source:c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\parser.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"ArrayList.h"
 	"Employee.h"
+
+1526589199 source:c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1526497506 c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\ingresodatos.h
 
