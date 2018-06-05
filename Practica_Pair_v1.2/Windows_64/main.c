@@ -18,71 +18,60 @@
 int main()
 {
     ArrayList* listaEmpleados;
-    ArrayList* listaEmpleados2;
-
-    Employee* miEmpleado;
-
-    Employee* miEmpleado2;
+    ArrayList* subempleados;
 
     Employee* aux;
 
     FILE* pFile;
 
+    listaEmpleados = al_newArrayList();
+
+    subempleados = al_newArrayList();
+
     pFile = fopen("data.csv","r");
 
-    miEmpleado = (Employee*) malloc(sizeof(Employee));
-
-    miEmpleado2 = (Employee*) malloc(sizeof(Employee));
-
-    listaEmpleados2 = al_newArrayList();
+    parserEmployee(pFile,listaEmpleados);
 
 
-    //parserEmployee(pFile,listaEmpleados2);
-
-
-
-
-    miEmpleado->id=7;
-    strcpy(miEmpleado->name, "Juan");
-    miEmpleado->isEmpty=1;
-    strcpy(miEmpleado->lastName, "Gomez");
-
-
-    miEmpleado2->id=2;
-    strcpy(miEmpleado2->name, "Maria");
-    miEmpleado2->isEmpty=1;
-    strcpy(miEmpleado2->lastName, "Bigi");
-
-
-
-   listaEmpleados = al_newArrayList();//Allocate
-
-
-    al_add(listaEmpleados, miEmpleado);
-    al_add(listaEmpleados, miEmpleado2);
+   /* printf("LISTA\n");
 
     for (int i=0; i<al_len(listaEmpleados); i++)
     {
 
     aux = (Employee*)al_get(listaEmpleados, i);//apunta
 
-    printf("Elementos: %d--%s\n", aux->id, aux->name);
+
+    printf("%d\t%s\t%s\t%d\t\n", aux->id, aux->name, aux->lastName, aux->isEmpty );
 
     }
 
     al_sort(listaEmpleados,employee_compare,1);//0 descendente
-
+   printf("LISTA ORDENADA\n");
      for (int i=0; i<al_len(listaEmpleados); i++)
     {
 
     aux = (Employee*)al_get(listaEmpleados, i);//apunta
 
-    printf("Elementos: %d--%s\n", aux->id, aux->name);
+
+    printf("%d\t%s\t%s\t%d\t\n", aux->id, aux->name, aux->lastName, aux->isEmpty );
 
     }
 
      printf("Elementos: %d", al_len(listaEmpleados));
 
+     */
+
+     subempleados = al_subList(listaEmpleados,1,100);
+
+  for (int i=0; i<al_len(subempleados); i++)
+    {
+
+    aux = (Employee*)al_get(subempleados, i);//apunta
+
+
+    printf("%d\t%s\t%s\t%d\t\n", aux->id, aux->name, aux->lastName, aux->isEmpty );
+
+    }
 
 
 
