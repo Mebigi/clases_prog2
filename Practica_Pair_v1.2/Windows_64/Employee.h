@@ -36,7 +36,12 @@ int employee_setId(Employee* this, int id);
 int employee_getId(Employee* this);
 
 
-int parserEmployee(FILE* pFile , ArrayList* pArrayListEmployee);
+int parserEmployee(char [], ArrayList* pArrayListEmployee);
+
+void employees_print_all(ArrayList* pArrayListEmployee);
+
+char* employee_getName(Employee* this);
+
 #endif // _EMPLOYEE_H
 
 

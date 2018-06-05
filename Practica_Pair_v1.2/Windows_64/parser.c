@@ -5,10 +5,14 @@
 #include "Employee.h"
 
 
-int parserEmployee(FILE* pFile, ArrayList* pArrayListEmployee)
+int parserEmployee(char nombreArchivo[], ArrayList* pArrayListEmployee)
 {
 
     Employee* aux;
+
+    FILE* pFile;
+
+    pFile = fopen(nombreArchivo,"r");
 
     int r;
     int i=0;

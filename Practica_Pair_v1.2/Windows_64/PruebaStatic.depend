@@ -46,30 +46,31 @@
 	"ArrayList.h"
 	"Employee.h"
 
-1477571236 source:c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\employee.c
+1528210641 source:c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\employee.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
 	"Employee.h"
 
-1528114732 c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\arraylist.h
+1528201099 c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\arraylist.h
 
-1528122247 c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\employee.h
+1528209015 c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\employee.h
 
-1528124615 source:c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\main.c
+1528209198 source:c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\main.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
 	"parser.h"
 	"Employee.h"
 
-1528124232 source:c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\parser.c
+1528206257 source:c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\parser.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 	"ArrayList.h"
 	"Employee.h"
 
-1528122221 c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\parser.h
+1528201099 c:\test\mercedesbigi\clases_prog2\practica_pair_v1.2\windows_64\parser.h
 
 1528147756 source:c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\employee.c
 	<stdio.h>
