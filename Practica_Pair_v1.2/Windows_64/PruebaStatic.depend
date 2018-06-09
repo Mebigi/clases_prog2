@@ -110,3 +110,41 @@
 
 1526497506 c:\1ercuatrimestretecnicatura\clases_prog2\practica_pair_v1.2\windows_64\ingresodatos.h
 
+1528554369 source:c:\users\alumno\clases_prog2\practica_pair_v1.2\windows_64\employee.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Employee.h"
+	"ingresodatos.h"
+
+1528554369 c:\users\alumno\clases_prog2\practica_pair_v1.2\windows_64\arraylist.h
+
+1528554369 c:\users\alumno\clases_prog2\practica_pair_v1.2\windows_64\employee.h
+
+1528554369 c:\users\alumno\clases_prog2\practica_pair_v1.2\windows_64\ingresodatos.h
+
+1528554369 source:c:\users\alumno\clases_prog2\practica_pair_v1.2\windows_64\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1528554369 source:c:\users\alumno\clases_prog2\practica_pair_v1.2\windows_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"parser.h"
+	"Employee.h"
+	"ingresodatos.h"
+
+1528554369 c:\users\alumno\clases_prog2\practica_pair_v1.2\windows_64\parser.h
+
+1528554369 source:c:\users\alumno\clases_prog2\practica_pair_v1.2\windows_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+
