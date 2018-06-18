@@ -17,15 +17,9 @@ int employee_compare(void* pEmployeeA,void* pEmployeeB)
    if(strcmp(employee_getName(aux1),employee_getName(aux2))>0)
    {
        retorno=1;
-       //printf("%s", (aux1->name));
 
    }
-   /*if(employee_getId(aux1) != employee_getId(aux2))
-   {
-       retorno=1;
-       printf("%s",employee_getName(aux1));
 
-   }*/
    }else if(strcmp(employee_getName(aux1),employee_getName(aux2))<0)
    {
         retorno=-1;
@@ -52,6 +46,11 @@ void employees_print_all(ArrayList* pArrayListEmployee)
   {
     aux = (Employee*)al_get(pArrayListEmployee, i);//apunta
     employee_print(aux);
+    if(i%100==0 && i>0)
+    {
+        printf("\n\n");
+        system("pause");
+    }
 
   }
 
@@ -76,16 +75,12 @@ void employees_add(ArrayList* pArrayListEmployee)
      getStringletras("Ingresar Nombre: ",NuevoEmpleado->name, 1, 25);
      getStringletras("Ingresar Apellido: ",NuevoEmpleado->lastName, 1, 25);
      NuevoEmpleado->isEmpty=1;
-     NuevoEmpleado->id=pArrayListEmployee->size;
-
+     NuevoEmpleado->id=pArrayListEmployee->size+1;
 
 
      al_add(pArrayListEmployee,NuevoEmpleado);
 
  }
-
-
-
 
 
 }
@@ -122,7 +117,6 @@ int employee_getId(Employee* this)
 
     int id;
 
-    id = (int) malloc(sizeof(int));
 
     if(this!=NULL)
     {
@@ -137,12 +131,10 @@ char* employee_getName(Employee* this)
 
     char* texto;
 
-    texto = (char*)malloc(sizeof(char)*50);
-
 
     if(this!=NULL)
     {
-        strcpy(texto,this->name);
+    texto = this->name;
 
     }
 

@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1529333106 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\employee.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Employee.h"
+	"ingresodatos.h"
+
+1529327619 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\arraylist.h
+
+1529327619 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\employee.h
+
+1529327619 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\ingresodatos.h
+
+1529327619 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1529328453 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"parser.h"
+	"Employee.h"
+	"ingresodatos.h"
+
+1529327619 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\parser.h
+
+1529327619 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+
+1529332051 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
