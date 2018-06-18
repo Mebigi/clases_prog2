@@ -27,6 +27,8 @@ int main()
 
     subempleados= al_newArrayList();
 
+    int ultimoId=0;
+
 
 
      char seguir='s';
@@ -41,14 +43,16 @@ int main()
         printf("4. Agregar un elemento\n");
         printf("5. Elimina un elemento\n");
         printf("6. Listar Empleados (Desde/Hasta)\n");
-        printf("7. Salir\n");
+        printf("7. Guardar Empleados (Desde/Hasta)\n");
+        printf("8. Salir\n");
 
-        opcion = IngresarEntero("\nIngrese una OPCION\n", 1, 5);
+        opcion = IngresarEntero("\nIngrese una OPCION\n", 1, 8);
 
         switch(opcion)
         {
             case 1:
-                parserEmployee("data.csv",listaEmpleados);
+
+                ultimoId = parserEmployee("data.csv",listaEmpleados);
                 break;
             case 2:
                 employees_print_all(listaEmpleados);
@@ -58,15 +62,23 @@ int main()
                 al_sort(listaEmpleados,employee_compare,1);
                break;
             case 4:
-                employees_add(listaEmpleados);
-
+                employees_add(listaEmpleados, ultimoId);
+                ultimoId++;
                 //
                 break;
             case 5:
+                 employee_delete(listaEmpleados);
+
                break;
             case 6:
+                subempleados=al_subList(listaEmpleados,50,63);
+                employees_print_all(subempleados);
+
                 break;
             case 7:
+               employees_guardar_all(listaEmpleados);
+                break;
+            case 8:
                 seguir = 'n';
                 break;
         }

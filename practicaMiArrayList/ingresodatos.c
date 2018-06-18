@@ -239,7 +239,7 @@ void getString(char mensaje[],char input[], int min, int max)
     len = strlen(input);
     if(len < min || len > max)
     {
-        printf("Error,");
+        printf("Error en la cantidad de caracteres, ");
     }
     else
     {
@@ -268,6 +268,9 @@ void getStringletras(char mensaje[],char input[], int min, int max)
         }
         while (estex == 0);
 }
+
+
+
 
 
 void getStringEntero(char mensaje[],char input[], int min, int max)

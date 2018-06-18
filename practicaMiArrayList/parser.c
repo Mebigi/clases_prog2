@@ -17,15 +17,36 @@ int parserEmployee(char nombreArchivo[], ArrayList* pArrayListEmployee)
     int r;
     int i=0;
     char var1[50],var3[50],var2[50],var4[50];
+    int ultimoId=0;
 
     if(pFile == NULL)
     {
         printf("El archivo no existe");
         exit(EXIT_FAILURE);
     }
+
     do
     {
-        aux = (Employee*) malloc(sizeof(Employee));//le asigna una dire de memoria cada vez que entra al while
+
+    if(i==0)
+    {
+
+    fscanf(pFile,"%d", &ultimoId);
+    printf("%d\n", ultimoId);
+    i++;
+
+    }
+    else if(i==1)
+    {
+      fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",var1,var2,var3,var4); // es el encabezado
+      i++;
+    }
+    else if(i>1)
+    {
+
+
+
+    aux = (Employee*) malloc(sizeof(Employee));//le asigna una dire de memoria cada vez que entra al while
 
         r = fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",var1,var2,var3,var4);
         if(r==4)
@@ -51,14 +72,17 @@ int parserEmployee(char nombreArchivo[], ArrayList* pArrayListEmployee)
             i++;
 
         }
-        else
-            break;
+
     }
+      }
     while(!feof(pFile));
+
+
+
     fclose(pFile);
     //exit(EXIT_SUCCESS);
 
 
 
-    return 0;
+    return ultimoId;
 }

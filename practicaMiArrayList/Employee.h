@@ -31,7 +31,7 @@ struct
 int employee_compare(void* pEmployeeA,void* pEmployeeB);
 void employee_print(Employee* this);
 Employee* employee_new(void);
-void employee_delete(Employee* this);
+void employee_delete(ArrayList* pArrayListEmployee);
 int employee_setId(Employee* this, int id);
 int employee_getId(Employee* this);
 int employee_SetName(Employee* this, char* texto);
@@ -44,6 +44,16 @@ void employees_print_all(ArrayList* pArrayListEmployee);
 char* employee_getName(Employee* this);
 
 void employees_sort(ArrayList* pArrayListEmployee, int );
+
+void employees_add(ArrayList* pArrayListEmployee, int );
+
+void employee_set_ingresoNombre(Employee* this, int , int );
+
+void employee_set_ingresoApellido(Employee* this, int , int );
+
+int employees_Buscar(ArrayList* pArrayListEmployee, int );
+
+void employees_guardar_all(ArrayList* pArrayListEmployee);
 
 #endif // _EMPLOYEE_H
 

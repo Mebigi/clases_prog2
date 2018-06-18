@@ -606,7 +606,7 @@ int contract(ArrayList* this,int index)
 
             this->pElements=auxpElements;
             this->reservedSize=this->size+AL_INCREMENT;
-            free(auxpElements);
+
         }
 
     }

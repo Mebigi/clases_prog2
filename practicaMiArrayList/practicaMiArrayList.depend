@@ -43,3 +43,49 @@
 	<string.h>
 	"ArrayList.h"
 
+1529353124 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529349957 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\arraylist.h
+
+1529364330 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"ingresodatos.h"
+	<ctype.h>
+
+1529364456 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\employee.h
+
+1529349957 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\ingresodatos.h
+
+1529360109 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1529364420 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"parser.h"
+	"Employee.h"
+	"ingresodatos.h"
+
+1529349957 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\parser.h
+
+1529351673 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+
