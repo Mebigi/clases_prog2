@@ -31,9 +31,27 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="ArrayList.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ArrayList.h" />
+		<Unit filename="Employee.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Employee.h" />
+		<Unit filename="data.csv" />
+		<Unit filename="ingresodatos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ingresodatos.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="parser.h" />
+		<Unit filename="practicaMiArrayList.cbp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
