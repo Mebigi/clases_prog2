@@ -11,8 +11,8 @@ int employee_compare(void* pEmployeeA,void* pEmployeeB)
 {
    int retorno=0;
 
-   Employee* aux1= pEmployeeA;
-   Employee* aux2= pEmployeeB;
+   Employee* aux1= (Employee*)pEmployeeA;
+   Employee* aux2= (Employee*)pEmployeeB;
 
    if(aux1!=NULL && aux2!=NULL)
    {
@@ -194,22 +194,33 @@ int employee_SetName(Employee* this, char* texto)
 
 void employee_set_ingresoNombre(Employee* this, int min, int max)
 {
-    getStringletras("\nIngresar Nombre: ",this->name, min, max);
+    if(this!=NULL)
+    {
+         getStringletras("\nIngresar Nombre: ",this->name, min, max);
 
-    strlwr(this->name);
+            strlwr(this->name);
 
-    this->name[0]=toupper(this->name[0]);
+            this->name[0]=toupper(this->name[0]);
+
+
+    }
 
 }
 
 
 void employee_set_ingresoApellido(Employee* this, int min, int max)
 {
+
+    if(this!=NULL)
+    {
+
+
     getStringletras("\nIngresar Apellido: ",this->lastName, min, max);
 
     strlwr(this->lastName);
 
     this->lastName[0]=toupper(this->lastName[0]);
+    }
 
 }
 

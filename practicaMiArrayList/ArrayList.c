@@ -440,11 +440,11 @@ int al_containsAll(ArrayList* this,ArrayList* this2)
     if(this!= NULL && this2!= NULL)
     {
 
-        tam = al_len(this);
+        tam = al_len(this2);
 
         for(int i=0; i<tam; i++) //
         {
-            if(*(this->pElements+i)!= *(this2->pElements+i))
+            if(al_contains(this, *(this2->pElements+i)))
             {
                 returnAux=0;
                 break;

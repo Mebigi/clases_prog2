@@ -43,10 +43,11 @@ int main()
         printf("4. Agregar un elemento\n");
         printf("5. Elimina un elemento\n");
         printf("6. Listar Empleados (Desde/Hasta)\n");
-        printf("7. Guardar Empleados (Desde/Hasta)\n");
-        printf("8. Salir\n");
+        printf("7. Guardar Empleados\n");
+        printf("8. Esta contenido?\n");
+        printf("9. Salir\n");
 
-        opcion = IngresarEntero("\nIngrese una OPCION\n", 1, 8);
+        opcion = IngresarEntero("\nIngrese una OPCION\n", 1, 9);
 
         switch(opcion)
         {
@@ -79,6 +80,18 @@ int main()
                employees_guardar_all(listaEmpleados);
                 break;
             case 8:
+                if(al_containsAll(listaEmpleados,subempleados)==0)
+                {
+                    printf("Está contenido\n");
+                }
+                else
+                {
+                    printf("NO Está contenido\n");
+                }
+
+
+                break;
+            case 9:
                 seguir = 'n';
                 break;
         }
