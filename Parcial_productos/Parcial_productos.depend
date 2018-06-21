@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1529498039 source:c:\programacion1cuatri\clases_prog2\parcial_productos\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529445295 c:\programacion1cuatri\clases_prog2\parcial_productos\arraylist.h
+
+1529521773 source:c:\programacion1cuatri\clases_prog2\parcial_productos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"vistas.h"
+	"manejadorDatos.h"
+	"producto.h"
+
+1529521672 source:c:\programacion1cuatri\clases_prog2\parcial_productos\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"vistas.h"
+	"manejadorDatos.h"
+	"producto.h"
+
+1529515353 source:c:\programacion1cuatri\clases_prog2\parcial_productos\vistas.c
+
+1529521938 source:c:\programacion1cuatri\clases_prog2\parcial_productos\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"vistas.h"
+	"manejadorDatos.h"
+	"producto.h"
+
+1529526487 c:\programacion1cuatri\clases_prog2\parcial_productos\vistas.h
+
+1529517087 c:\programacion1cuatri\clases_prog2\parcial_productos\manejadordatos.h
+
+1529521705 c:\programacion1cuatri\clases_prog2\parcial_productos\producto.h
+
+1529521153 source:c:\programacion1cuatri\clases_prog2\parcial_productos\producto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"vistas.h"
+	"manejadorDatos.h"
+	"producto.h"
+

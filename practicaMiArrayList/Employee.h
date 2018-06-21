@@ -53,7 +53,9 @@ void employee_set_ingresoApellido(Employee* this, int , int );
 
 int employees_Buscar(ArrayList* pArrayListEmployee, int );
 
-void employees_guardar_all(ArrayList* pArrayListEmployee);
+void employees_guardar_all(ArrayList* pArrayListEmployee, int);
+
+
 
 #endif // _EMPLOYEE_H
 

@@ -38,7 +38,10 @@ void employee_print(Employee* this)
 
 void employees_print_all(ArrayList* pArrayListEmployee)
 {
-  Employee* aux;
+
+  if(pArrayListEmployee != NULL)
+ {
+ Employee* aux;
   int len;
 
   len=al_len(pArrayListEmployee);
@@ -53,7 +56,11 @@ void employees_print_all(ArrayList* pArrayListEmployee)
         system("pause");
     }
 
+
+
+
   }
+}
 
 }
 
@@ -105,10 +112,14 @@ void employee_delete(ArrayList* pArrayListEmployee)
    //employees_print_all(listaEmpleados);
    int index;
    int id;
+   Employee* returnAux = NULL;
 
    id= IngresarEntero("\n\nIngrese El ID que desea eliminar", 1, 100000);
    index= employees_Buscar(pArrayListEmployee ,id);
-   al_remove(pArrayListEmployee,index);
+   returnAux = al_pop(pArrayListEmployee,index);
+
+   employee_print(returnAux);
+
 
 }
 
@@ -123,6 +134,7 @@ int employees_Buscar(ArrayList* pArrayListEmployee, int id)
   for (int i=0; i<len; i++)
   {
     aux = (Employee*)al_get(pArrayListEmployee, i);//apunta
+
 
     if (aux->id==id)
     {
@@ -225,7 +237,7 @@ void employee_set_ingresoApellido(Employee* this, int min, int max)
 }
 
 
-void employees_guardar_all(ArrayList* pArrayListEmployee)
+void employees_guardar_all(ArrayList* pArrayListEmployee, int ultimoId)
 {
   Employee* aux;
 
@@ -250,6 +262,9 @@ void employees_guardar_all(ArrayList* pArrayListEmployee)
        len=al_len(pArrayListEmployee);
 
         //que guarde el id mas grande y un encabezado
+        fprintf(f,"%d\n", ultimoId);
+
+        fprintf(f,"id,nombre,Apellido,isEmpty\n");
 
         for (int i=0; i<len; i++)
         {

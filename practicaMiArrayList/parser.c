@@ -86,3 +86,107 @@ int parserEmployee(char nombreArchivo[], ArrayList* pArrayListEmployee)
 
     return ultimoId;
 }
+
+
+int dm_leerbinario(ArrayList* pArrayListEmployee)
+{
+
+
+   int ultimoId=0;
+   char encabezado[28];
+
+
+
+    FILE* pFile=fopen("data.bat","rb");
+
+    if(pFile == NULL)
+    {
+        printf("El archivo no existe");
+        exit(EXIT_FAILURE);
+    }
+
+
+     fread(&ultimoId,sizeof(int),1,pFile);
+     //printf("ultimoId %d", ultimoId);
+
+     fread(encabezado,sizeof(char),27,pFile);
+     //printf("encabezado %s", encabezado);// es el encabezado
+
+    do
+    {
+
+            Employee* aux = employee_new();
+
+            if(fread(aux,sizeof(Employee),1,pFile))
+            {
+            al_add(pArrayListEmployee,aux);
+
+            }
+
+
+
+            //employee_print(aux);
+
+
+    }while(!feof(pFile));
+
+        fclose(pFile);
+
+        return ultimoId;
+}
+
+
+void employees_guardar_binario(ArrayList* pArrayListEmployee, int ultimoId)
+{
+  Employee* aux;
+
+  FILE *f;
+
+	int retorno=0;
+
+	f=fopen("data2.bat", "wb");
+
+	char encabezado[28]= {"id,nombre,Apellido,isEmpty\n"};
+
+	if(f==NULL)
+	{
+
+			retorno=1;
+    }
+
+
+	if(retorno ==0)
+	{
+
+        int len;
+
+       len=al_len(pArrayListEmployee);
+
+        //que guarde el id mas grande y un encabezado
+
+       fwrite(&ultimoId,sizeof(int),1,f);
+
+       fwrite(encabezado,sizeof(char),27,f);
+
+        for (int i=0; i<len; i++)
+        {
+
+
+
+       aux = (Employee*)al_get(pArrayListEmployee, i);
+
+       fwrite(aux,sizeof(Employee),1,f);
+
+
+
+
+     }
+	}
+
+	fclose(f);
+
+
+
+
+}
+

@@ -1,0 +1,3 @@
+
+
+void cont_inicio();
