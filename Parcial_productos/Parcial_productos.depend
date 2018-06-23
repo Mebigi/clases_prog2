@@ -51,3 +51,65 @@
 	"manejadorDatos.h"
 	"producto.h"
 
+1529757113 source:c:\users\alumno\clases_prog2\parcial_productos\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529757113 c:\users\alumno\clases_prog2\parcial_productos\arraylist.h
+
+1529757113 source:c:\users\alumno\clases_prog2\parcial_productos\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"vistas.h"
+	"manejadorDatos.h"
+	"producto.h"
+
+1529757113 c:\users\alumno\clases_prog2\parcial_productos\vistas.h
+
+1529757113 c:\users\alumno\clases_prog2\parcial_productos\manejadordatos.h
+
+1529757113 c:\users\alumno\clases_prog2\parcial_productos\producto.h
+
+1529757113 source:c:\users\alumno\clases_prog2\parcial_productos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"vistas.h"
+	"manejadorDatos.h"
+	"producto.h"
+
+1529757113 source:c:\users\alumno\clases_prog2\parcial_productos\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"vistas.h"
+	"manejadorDatos.h"
+	"producto.h"
+
+1529757113 source:c:\users\alumno\clases_prog2\parcial_productos\producto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"vistas.h"
+	"manejadorDatos.h"
+	"producto.h"
+
+1529757113 source:c:\users\alumno\clases_prog2\parcial_productos\validacion.c
+	"validacion.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1529757113 c:\users\alumno\clases_prog2\parcial_productos\validacion.h
+
+1529757113 source:c:\users\alumno\clases_prog2\parcial_productos\vistas.c
+

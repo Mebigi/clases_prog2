@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1529757113 source:c:\users\alumno\clases_prog2\parcial_trunos\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529757113 c:\users\alumno\clases_prog2\parcial_trunos\arraylist.h
+
+1529761248 source:c:\users\alumno\clases_prog2\parcial_trunos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
+1529765337 c:\users\alumno\clases_prog2\parcial_trunos\validacion.h
+
+1529768657 c:\users\alumno\clases_prog2\parcial_trunos\turnos.h
+
+1529768673 c:\users\alumno\clases_prog2\parcial_trunos\vista.h
+
+1529765337 source:c:\users\alumno\clases_prog2\parcial_trunos\validacion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
+1529768673 source:c:\users\alumno\clases_prog2\parcial_trunos\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
+1529769348 source:c:\users\alumno\clases_prog2\parcial_trunos\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
+1529768673 c:\users\alumno\clases_prog2\parcial_trunos\controlador.h
+
+1529768666 source:c:\users\alumno\clases_prog2\parcial_trunos\turnos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
