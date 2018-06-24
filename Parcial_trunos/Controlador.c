@@ -9,14 +9,22 @@
 
 
 ArrayList* Turnos;
-int ultimoId =0;
+ArrayList* TurnosU;
+ArrayList* TurnosA;
+ArrayList* TurnosUA;
+
+int nroturno=0;
 
 void cont_inicio()
 {
 
      Turnos = al_newArrayList();
+     TurnosU = al_newArrayList();
+     TurnosUA = al_newArrayList();
+     TurnosA = al_newArrayList();
+     vista_mostrarMenu();
 
-     int ultimoId =0;
+
 
      /*if(Turnos!=NULL)
      {
@@ -37,47 +45,63 @@ void cont_inicio()
      }
 */
 
-      vista_mostrarMenu();
+
 
 }
 
-
-int opcionAlta_Turno(int tipo)
+void opcionAlta_TurnoUrgente(void)
 {
+    opcionAlta_Turno(TurnosU);
 
- //0 urgente
- int estado=1; // 0 finalizado
+}
+
+void opcionAlta_TurnoNormal(void)
+{
+    opcionAlta_Turno(Turnos);
+}
+
+int opcionAlta_Turno(ArrayList* this)
+{
  char dni[9];
- int id_turno; // orden
-
- id_turno=ultimoId+1;
- getStringEntero("ingresar DNI",dni, 7, 8);
 
  Turno* nuevoTurno;
 
- nuevoTurno= turno_nuevo();
+
+ getStringEntero("Ingresar DNI",dni, 7, 8);
+
+ nuevoTurno = turno_nuevo();
 
  if (nuevoTurno!= NULL)
  {
-
-    turno_set_tipo_tramite(nuevoTurno,tipo);
-    turno_setEstado(nuevoTurno,estado);
-    turno_set_id_turno(nuevoTurno,id_turno);
+    nroturno++;
+    turno_set_id_turno(nuevoTurno,nroturno);
     turno_setDni(nuevoTurno,dni);
-
-    al_add(Turnos,nuevoTurno);
+    al_add(this,nuevoTurno);
 
  }
+    return 0;
+}
 
+int opcionListadoPendientes()
+{
+    printf("\nTurnos Urgentes:\n");
+    turnos_print_all(TurnosU);
+    printf("\nTurnos Normales:\n");
+    turnos_print_all(Turnos);
+    return 0;
+}
+
+int opcionListadoAtendidos()
+{
+
+    printf("\nTurnos Normales:\n");
+    turnos_print_all(TurnosA);
+     printf("\nTurnos Urgentes:\n");
+    turnos_print_all(TurnosUA);
     return 0;
 }
 
 
-void turno_print(Turno* this)
-{
-      printf("%10d\t%15s\t%15d\t%15d\t\n", this->id_turno, this->dni, this->tipo_tramite, this->estado );
-
-}
 
 void turnos_print_all(ArrayList* this)
 {
@@ -93,33 +117,46 @@ void turnos_print_all(ArrayList* this)
 
   }
 }
-int opcionListadoPendientes()
-{
-
-    turnos_print_all(Turnos);
-    return 0;
-}
-
-int opcionListadoPasados()
-{
-    return 0;
-}
 
 
 int opcionProximo()
 {
 
-   Turno* proximo;
+   Turno* proximoU;
 
-   al_sort(Turnos,turno_compare,0);
+   turnos_print_all(TurnosU);
    turnos_print_all(Turnos);
 
    printf("\nEl Proximo turno es:\n");
 
-   proximo = al_get(Turnos,0);
+   proximoU = al_get(TurnosU,0);
 
-   turno_print(proximo);
+   if(proximoU!=NULL)
+   {
+       turno_print(proximoU);
+       al_add(TurnosUA,proximoU);
+       al_pop(TurnosU,0);
 
+   }
+   else{
+    Turno* proximo;
+    proximo = al_get(Turnos,0);
+    if(proximo!=NULL)
+       {
+           turno_print(proximo);
+           al_add(TurnosA,proximo);
+           al_pop(Turnos,0);
+
+
+
+       }
+       else {
+
+        printf("No hay turnos pendientes\n");
+
+       }
+
+   }
 
     return 0;
 }

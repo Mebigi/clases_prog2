@@ -158,3 +158,35 @@
 	"Vista.h"
 	"Controlador.h"
 
+1529445294 source:c:\programacion1cuatri\clases_prog2\practica_mvc_vgtk [resuelto en clase 26]\windows_64\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Socio.h"
+	"Vista.h"
+	"DataManager.h"
+
+1529445294 c:\programacion1cuatri\clases_prog2\practica_mvc_vgtk [resuelto en clase 26]\windows_64\arraylist.h
+
+1529445294 c:\programacion1cuatri\clases_prog2\practica_mvc_vgtk [resuelto en clase 26]\windows_64\socio.h
+	"ArrayList.h"
+
+1529445294 c:\programacion1cuatri\clases_prog2\practica_mvc_vgtk [resuelto en clase 26]\windows_64\vista.h
+
+1529445294 c:\programacion1cuatri\clases_prog2\practica_mvc_vgtk [resuelto en clase 26]\windows_64\datamanager.h
+
+1529445294 source:c:\programacion1cuatri\clases_prog2\practica_mvc_vgtk [resuelto en clase 26]\windows_64\datamanager.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Socio.h"
+	"DataManager.h"
+
+1529445294 source:c:\programacion1cuatri\clases_prog2\practica_mvc_vgtk [resuelto en clase 26]\windows_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Controlador.h"
+
+1529445294 c:\programacion1cuatri\clases_prog2\practica_mvc_vgtk [resuelto en clase 26]\windows_64\controlador.h
+

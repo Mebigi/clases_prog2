@@ -26,37 +26,7 @@ int prod_delete(Turno* this)
 }
 
 
-//int tipo_tramite; //0 urgente
- //int estado; // 0 finalizado
- //char dni9;
- //int id_turno; // orden
 
-int turno_set_tipo_tramite(Turno* this,int tipo)
-{
-    int retorno =0;
-    if(this!=NULL)
-    {
-        this->tipo_tramite=tipo;
-        retorno =1;
-
-    }
-
-    return retorno;
-
-}
-
-int turno_get_tipo_tramite(Turno* this)
-{
-    int tipo=-1;
-
-    if(this!=NULL)
-    {
-        tipo=this->tipo_tramite;
-
-
-    }
-    return tipo;
-}
 
 int turno_set_id_turno(Turno* this,int id)
 {
@@ -120,52 +90,13 @@ char* turno_getDni(Turno* this)
 
 
 
-int turno_setEstado(Turno* this,int estado)
+
+void turno_print(Turno* this)
 {
-    int retorno =0;
-
-    if(this!=NULL)
-    {
-    this->estado = estado;
-     int retorno =1;
-    }
-    return retorno;
-}
-
-int turno_getEstado(Turno* this)
-{
-
-     if(this!=NULL)
-    {
-     return this->estado;
-    }
-
-    return 0;
-
+      printf("%10s\t%10d\n", turno_getDni(this), turno_get_id_turno(this));
 }
 
 
-int turno_compare(void* turnoA,void* turnoB)
-{
-   int retorno=0;
-
-   Turno* aux1= (Turno*)turnoA;
-   Turno* aux2= (Turno*)turnoA;
-
-   if(aux1!=NULL && aux2!=NULL)
-   {
-   if(turno_get_tipo_tramite(aux1) > turno_get_tipo_tramite(aux2))
-   {
-       retorno=1;
 
 
-   }
-
-   }else if(turno_get_tipo_tramite(aux1)< turno_get_tipo_tramite(aux2))
-   {
-        retorno=-1;
-   }
-
-    return retorno;
-}
 

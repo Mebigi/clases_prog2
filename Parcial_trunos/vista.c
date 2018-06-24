@@ -21,10 +21,10 @@ int vista_mostrarMenu()
         switch(option)
         {
             case 1:
-                opcionAlta_Turno(0);
+                opcionAlta_TurnoUrgente();
                 break;
             case 2:
-                opcionAlta_Turno(1);
+                opcionAlta_TurnoNormal();
                 break;
             case 3:
                 opcionProximo();
@@ -34,7 +34,7 @@ int vista_mostrarMenu()
 
                 break;
             case 5:
-                opcionListadoPasados();
+                opcionListadoAtendidos();
                 break;
             case 6:
 
@@ -72,12 +72,6 @@ int vista_opcion(char mensaje[], int min, int max)
     return numero;
 }
 
-
-
-int opcionAlta_Turno_Regular()
-{
-    return 0;
-}
 
 
 

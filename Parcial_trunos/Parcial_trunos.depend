@@ -65,3 +65,69 @@
 	"Vista.h"
 	"controlador.h"
 
+1529790518 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529790518 c:\programacion1cuatri\clases_prog2\parcial_trunos\arraylist.h
+
+1529795805 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
+1529790518 c:\programacion1cuatri\clases_prog2\parcial_trunos\validacion.h
+
+1529801044 c:\programacion1cuatri\clases_prog2\parcial_trunos\turnos.h
+
+1529790518 c:\programacion1cuatri\clases_prog2\parcial_trunos\vista.h
+
+1529801044 c:\programacion1cuatri\clases_prog2\parcial_trunos\controlador.h
+
+1529801044 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\turnos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
+1529790518 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\validacion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
+1529801044 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
+1529800986 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
