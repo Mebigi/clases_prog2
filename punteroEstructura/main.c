@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 
 typedef struct
 {
@@ -10,7 +10,7 @@ typedef struct
 int main()
 {
 
-   /* eDato miDato = {1,'c'};
+    eDato miDato = {1,'c'};
     eDato miDato2 = {1,'A'};
 
     eDato lista[2];
@@ -28,17 +28,16 @@ int main()
 
 
     printf("Desde las estructura: %d -- %c\n", miDato.datoInt, miDato.datoChar );
-    printf("Desde las puntero: %d -- %c\n", (* pDato).datoInt, (* pDato).datoChar );
+    printf("Desde las puntero: %d -- %c\n", (*pDato).datoInt, (* pDato).datoChar );
 
     for(int i=0; i<2; i++)
     {
         printf("Desde las puntero array: %d -- %c\n", (* (pDato+i)).datoInt, (*(pDato+i)).datoChar );
     }
 
-*/
 
 
-    eDato miDato = {1,'c'};
+   /* eDato miDato = {1,'c'};
     eDato* pDato = NULL;
 
     pDato =&miDato;
@@ -49,6 +48,6 @@ int main()
 
     //operdador flecha es una astrapcion del punto y de * operdador inacceso
     printf("%d -- %c\n", pDato->datoInt, pDato->datoChar);
-
+*/
     return 0;
 }

@@ -97,6 +97,76 @@ void turno_print(Turno* this)
 }
 
 
+int compareTurno(void* turnoA,void* turnoB)
+{
+  int retorno=0;
+
+   Turno* aux1= (Turno*)turnoA;
+   Turno* aux2= (Turno*)turnoB;
+
+
+//long int axulong1=0;
+//long int axulong2=0;
+
+int axulong1=0;
+int axulong2=0;
+
+   if(aux1!=NULL && aux2!=NULL)
+   {
+  axulong1=atol(turno_getDni(aux1));
+  //printf("axulong1 %ld\n",axulong1);
+  axulong2=atol(turno_getDni(aux2));
+  //printf("axulong2 %ld\n",axulong2);
+
+
+
+   if(axulong1>axulong2)
+   {
+       retorno=1;
+        printf("axulong1 %ld es mayor a axulong1 %ld\n",axulong1, axulong2);
+   }
+
+   else if(axulong1<axulong2)
+   {
+        retorno=-1;
+        printf("axulong1 %ld es NO mayor a axulong1 %ld\n",axulong1, axulong2);
+   }
+   }
+
+
+    return retorno;
+
+
+}
+
+int compareTurnoStr(void* turnoA,void* turnoB)
+{
+  int retorno=0;
+
+   Turno* aux1= (Turno*)turnoA;
+   Turno* aux2= (Turno*)turnoB;
+
+
+
+   if(aux1!=NULL && aux2!=NULL)
+   {
+   if(strcmp(turno_getDni(aux1),turno_getDni(aux2))>0)
+   {
+       retorno=1;
+   }
+
+   else if(strcmp(turno_getDni(aux1),turno_getDni(aux2))<0)
+   {
+        retorno=-1;
+   }
+   }
+
+    return retorno;
+
+
+}
+
+
 
 
 

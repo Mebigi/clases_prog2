@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1529872665 source:c:\programacion1cuatri\clases_prog2\punteroapuntero\main.c
+	<stdio.h>
+	<stdlib.h>
+

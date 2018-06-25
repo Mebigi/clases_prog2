@@ -14,5 +14,7 @@ char* turno_getDni(Turno* this);
 
 
 void turno_print(Turno*);
+int compareTurno(void* ,void* );
+int compareTurnoStr(void* ,void* );
 
 

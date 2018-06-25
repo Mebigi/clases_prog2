@@ -67,7 +67,7 @@ int opcionAlta_Turno(ArrayList* this)
  Turno* nuevoTurno;
 
 
- getStringEntero("Ingresar DNI",dni, 7, 8);
+ getStringEntero("Ingresar DNI",dni, 7, 9);
 
  nuevoTurno = turno_nuevo();
 
@@ -95,8 +95,12 @@ int opcionListadoAtendidos()
 {
 
     printf("\nTurnos Normales:\n");
+    al_sort(TurnosA,compareTurno,1);
     turnos_print_all(TurnosA);
      printf("\nTurnos Urgentes:\n");
+      al_sort(TurnosUA,compareTurno,0);
+      //al_sort(TurnosUA,compareTurnoStr,0);
+
     turnos_print_all(TurnosUA);
     return 0;
 }

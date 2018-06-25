@@ -21,9 +21,10 @@ int employee_compare(void* pEmployeeA,void* pEmployeeB)
        retorno=1;
    }
 
-   }else if(strcmp(employee_getName(aux1),employee_getName(aux2))<0)
+   else if(strcmp(employee_getName(aux1),employee_getName(aux2))<0)
    {
         retorno=-1;
+   }
    }
 
     return retorno;

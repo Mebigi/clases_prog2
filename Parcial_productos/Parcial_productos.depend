@@ -113,3 +113,13 @@
 
 1529757113 source:c:\users\alumno\clases_prog2\parcial_productos\vistas.c
 
+1529526487 source:c:\programacion1cuatri\clases_prog2\parcial_productos\validacion.c
+	"validacion.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1529526487 c:\programacion1cuatri\clases_prog2\parcial_productos\validacion.h
+
