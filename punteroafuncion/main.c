@@ -10,7 +10,7 @@ int main()
     void (*F1)(char*); //indica puntero a funcion
     F1 = funcion1;
 
-    F1("hola");
+    F1("Mercedes"); //llamo a f1
 
     funcionDelegado(funcion1);
     funcionDelegado(funcion2);
@@ -28,5 +28,5 @@ void funcion2(char * txt)
 }
 void funcionDelegado(void(*funcion)(char*))
 {
-    funcion("Hola");
+    funcion("Lucia, ");
 }

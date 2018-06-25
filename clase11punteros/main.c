@@ -18,6 +18,13 @@ int main()
     int* mipunteroAEntero;
     char* caracter;
     char* otroPuntero;
+    int a =9;
+    int b= 2;
+    int* pa =&a;
+    int* pb=&b;
+
+     printf("\n%d - %d", *pa, *pb);
+
 
     caracter=&aux;
     otroPuntero=caracter;
@@ -27,6 +34,7 @@ int main()
     printf("\nvalor aux: %d", aux);
     printf("\nvalor aux: %d", &aux);
     printf("\nvalor aux: %c", aux);
+    printf("\nvalor otroPuntero: %d", otroPuntero);
 
 
 
@@ -34,6 +42,10 @@ int main()
     datos = swap(datos);
 
     printf("\n%d - %d", datos.uno, datos.dos);
+
+    swap2(pa, pb);
+
+    printf("\n%d - %d", *pa, *pb);
 
 
     return 0;

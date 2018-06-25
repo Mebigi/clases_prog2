@@ -65,7 +65,7 @@
 	"Vista.h"
 	"controlador.h"
 
-1529790518 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\arraylist.c
+1529955621 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\arraylist.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -91,7 +91,7 @@
 
 1529801044 c:\programacion1cuatri\clases_prog2\parcial_trunos\controlador.h
 
-1529888305 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\turnos.c
+1529888838 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\turnos.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

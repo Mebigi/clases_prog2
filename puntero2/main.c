@@ -30,7 +30,7 @@ int main()
     printf("\nvalor aux: %c", letra);
     printf("\nvalor de puntero %d en hex:%p", letra,&letra);
     printf("\nvalor de puntero %d en hex:%p", punteroaChar,punteroaChar);
-    printf("\nvalor de puntero %c", punteroaChar);
+    printf("\nvalor de puntero %c proque como es un puntero no interpreta caracteres", punteroaChar);
     printf("\nvalor de puntero %d en hex:%p", &punteroaChar, &punteroaChar);
 
 
