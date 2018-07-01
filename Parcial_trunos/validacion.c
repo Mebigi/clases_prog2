@@ -363,3 +363,29 @@ int esNumero(char numero[])
 
 
 
+int Confirmacion(char mensaje[])
+{
+     char confirma;
+     int retorno=0;
+
+      printf("\n.....................................................");
+
+
+     printf("\n%s s/n: ", mensaje);
+
+
+
+     confirma= getche();
+     confirma= tolower(confirma);
+
+
+     if(confirma == 's')
+     {
+         retorno=1;
+
+     }
+
+     return retorno;
+
+}
+

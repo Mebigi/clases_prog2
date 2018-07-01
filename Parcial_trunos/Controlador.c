@@ -8,103 +8,51 @@
 #include "controlador.h"
 
 
-ArrayList* Turnos;
-ArrayList* TurnosU;
-ArrayList* TurnosA;
-ArrayList* TurnosUA;
 
-int nroturno=0;
 
-void cont_inicio()
+int opcionAlta_Turno(ArrayList* this, char nombrearchivo[])
 {
 
-     Turnos = al_newArrayList();
-     TurnosU = al_newArrayList();
-     TurnosUA = al_newArrayList();
-     TurnosA = al_newArrayList();
-     vista_mostrarMenu();
-
-
-
-     /*if(Turnos!=NULL)
-     {
-         ultimoId = md_carga_archivo("data.dat", Productos);
-
-         if(ultimoId)
-         {
-             printf("Se cargaron los Datos a la lista");
-         }
-         else
-         {
-             printf("No Se cargaron los Datos a la lista");
-         }
-     }
-     else
-     {
-          printf("No Se creo el ArrayList Productos");
-     }
-*/
-
-
-
-}
-
-void opcionAlta_TurnoUrgente(void)
-{
-    opcionAlta_Turno(TurnosU);
-
-}
-
-void opcionAlta_TurnoNormal(void)
-{
-    opcionAlta_Turno(Turnos);
-}
-
-int opcionAlta_Turno(ArrayList* this)
-{
- char dni[9];
-
- Turno* nuevoTurno;
-
-
- getStringEntero("Ingresar DNI",dni, 7, 9);
-
- nuevoTurno = turno_nuevo();
-
- if (nuevoTurno!= NULL)
+ int retorno=-1;
+ if(this!=NULL)
  {
-    nroturno++;
-    turno_set_id_turno(nuevoTurno,nroturno);
-    turno_setDni(nuevoTurno,dni);
-    al_add(this,nuevoTurno);
+    Turno* nuevoTurno;
+    nuevoTurno = turno_ingreso();
+
+    if(al_add(this,nuevoTurno)==0) //0=es ok
+    {
+        md_guardar_text(this,nombrearchivo);
+        retorno =1;
+
+    }
 
  }
-    return 0;
+
+     return retorno;
 }
 
-int opcionListadoPendientes()
+int opcionListado(ArrayList* this, char* encabezado)
 {
-    printf("\nTurnos Urgentes:\n");
-    turnos_print_all(TurnosU);
-    printf("\nTurnos Normales:\n");
-    turnos_print_all(Turnos);
+    if (this!= NULL)
+    {
+
+    printf("\n%s\n", encabezado);
+    turnos_print_all(this);
+    }
+
     return 0;
 }
 
-int opcionListadoAtendidos()
+int opcionListado_sort(ArrayList* this, char* encabezado)
 {
 
-    printf("\nTurnos Normales:\n");
-    al_sort(TurnosA,compareTurno,1);
-    turnos_print_all(TurnosA);
-     printf("\nTurnos Urgentes:\n");
-      al_sort(TurnosUA,compareTurno,0);
-      //al_sort(TurnosUA,compareTurnoStr,0);
+    printf("\n%s\n", encabezado);
+    al_sort(this,compareTurno,0); //descendente
 
-    turnos_print_all(TurnosUA);
+    turnos_print_all(this);
+
     return 0;
 }
-
 
 
 void turnos_print_all(ArrayList* this)
@@ -123,45 +71,54 @@ void turnos_print_all(ArrayList* this)
 }
 
 
-int opcionProximo()
+Turno* opcionProximo(ArrayList* this, char encabezado[])
+{
+  Turno* proximo = NULL;
+
+   if(this!=NULL)
+   {
+
+       printf("\n%s\n", encabezado);
+       proximo =(Turno*)al_get(this,0);
+
+       if (proximo!=NULL)
+       {
+
+       turno_print(proximo);
+
+       if(Confirmacion("Confirma la atencion s/n?"))
+       {
+        proximo = (Turno*)al_pop(this,0);
+       }
+
+       }
+       else
+       {
+            printf("\\n");
+
+       }
+
+
+
+   }
+   return proximo;
+
+}
+
+int add_listadoAtendidos(ArrayList* this, Turno* atendido)
 {
 
-   Turno* proximoU;
+ int retorno=-1;
 
-   turnos_print_all(TurnosU);
-   turnos_print_all(Turnos);
+ if (atendido!=NULL && this!=NULL)
+ {
 
-   printf("\nEl Proximo turno es:\n");
+  retorno=al_add(this, atendido);
+  //retorno 0 si es ok -1 si es error al_add
 
-   proximoU = al_get(TurnosU,0);
+ }
 
-   if(proximoU!=NULL)
-   {
-       turno_print(proximoU);
-       al_add(TurnosUA,proximoU);
-       al_pop(TurnosU,0);
+ return retorno;
 
-   }
-   else{
-    Turno* proximo;
-    proximo = al_get(Turnos,0);
-    if(proximo!=NULL)
-       {
-           turno_print(proximo);
-           al_add(TurnosA,proximo);
-           al_pop(Turnos,0);
-
-
-
-       }
-       else {
-
-        printf("No hay turnos pendientes\n");
-
-       }
-
-   }
-
-    return 0;
 }
 

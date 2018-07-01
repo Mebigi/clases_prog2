@@ -18,6 +18,33 @@ Turno* turno_nuevo(void)
     return nuevoTurno;
 }
 
+Turno* turno_ingreso(void)
+{
+
+ char dni[9];
+ int ultimoturno;
+ Turno* nuevoTurno;
+
+ getStringEntero("Ingresar DNI",dni, 7, 9);
+ nuevoTurno = turno_nuevo();
+ ultimoturno= md_leer_turno("ultimoNro.txt");
+
+ if (nuevoTurno!= NULL)
+ {
+    ultimoturno++; // le suma antes para no repetir
+    turno_set_id_turno(nuevoTurno,ultimoturno);
+    turno_setDni(nuevoTurno,dni);
+    md_guardar_turno("ultimoNro.txt",ultimoturno);
+
+ }
+
+return nuevoTurno;
+
+}
+
+
+
+
 
 int prod_delete(Turno* this)
 {
@@ -25,12 +52,10 @@ int prod_delete(Turno* this)
     return 0;
 }
 
-
-
-
 int turno_set_id_turno(Turno* this,int id)
 {
     int retorno =0;
+
     if(this!=NULL)
     {
         this->id_turno=id;
@@ -50,7 +75,6 @@ int turno_get_id_turno(Turno* this)
     if(this!=NULL)
     {
         id=this->id_turno;
-
 
     }
     return id;
@@ -78,11 +102,9 @@ char* turno_getDni(Turno* this)
 
     char* texto;
 
-
     if(this!=NULL)
     {
     texto = this->dni;
-
     }
 
     return texto;
@@ -104,7 +126,6 @@ int compareTurno(void* turnoA,void* turnoB)
    Turno* aux1= (Turno*)turnoA;
    Turno* aux2= (Turno*)turnoB;
 
-
 //long int axulong1=0;
 //long int axulong2=0;
 
@@ -118,24 +139,20 @@ int axulong2=0;
   axulong2=atol(turno_getDni(aux2));
   //printf("axulong2 %ld\n",axulong2);
 
-
-
    if(axulong1>axulong2)
    {
        retorno=1;
-        printf("axulong1 %ld es mayor a axulong1 %ld\n",axulong1, axulong2);
+       // printf("axulong1 %ld es mayor a axulong1 %ld\n",axulong1, axulong2);
    }
 
    else if(axulong1<axulong2)
    {
         retorno=-1;
-        printf("axulong1 %ld es NO mayor a axulong1 %ld\n",axulong1, axulong2);
+        //printf("axulong1 %ld es NO mayor a axulong1 %ld\n",axulong1, axulong2);
    }
    }
-
 
     return retorno;
-
 
 }
 

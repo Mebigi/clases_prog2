@@ -65,33 +65,15 @@
 	"Vista.h"
 	"controlador.h"
 
-1529955621 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\arraylist.c
+1530308903 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\arraylist.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"ArrayList.h"
 
-1529790518 c:\programacion1cuatri\clases_prog2\parcial_trunos\arraylist.h
+1530308903 c:\programacion1cuatri\clases_prog2\parcial_trunos\arraylist.h
 
-1529795805 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\main.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"Validacion.h"
-	"turnos.h"
-	"ArrayList.h"
-	"Vista.h"
-	"controlador.h"
-
-1529790518 c:\programacion1cuatri\clases_prog2\parcial_trunos\validacion.h
-
-1529888305 c:\programacion1cuatri\clases_prog2\parcial_trunos\turnos.h
-
-1529790518 c:\programacion1cuatri\clases_prog2\parcial_trunos\vista.h
-
-1529801044 c:\programacion1cuatri\clases_prog2\parcial_trunos\controlador.h
-
-1529888838 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\turnos.c
+1530404355 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -101,7 +83,15 @@
 	"Vista.h"
 	"controlador.h"
 
-1529790518 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\validacion.c
+1530308904 c:\programacion1cuatri\clases_prog2\parcial_trunos\validacion.h
+
+1530404570 c:\programacion1cuatri\clases_prog2\parcial_trunos\turnos.h
+
+1530308904 c:\programacion1cuatri\clases_prog2\parcial_trunos\vista.h
+
+1530404389 c:\programacion1cuatri\clases_prog2\parcial_trunos\controlador.h
+
+1530404355 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\turnos.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -111,7 +101,7 @@
 	"Vista.h"
 	"controlador.h"
 
-1529888568 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\controlador.c
+1530315538 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\validacion.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -121,7 +111,27 @@
 	"Vista.h"
 	"controlador.h"
 
-1529800986 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\vista.c
+1530404355 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
+1530315709 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validacion.h"
+	"turnos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+
+1530399904 source:c:\programacion1cuatri\clases_prog2\parcial_trunos\manejadordatos.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

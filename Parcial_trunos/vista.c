@@ -12,7 +12,7 @@
 int vista_mostrarMenu()
 {
 
-    int option=0;
+    /*int option=0;
 
     while(option != 6)
     {
@@ -21,20 +21,37 @@ int vista_mostrarMenu()
         switch(option)
         {
             case 1:
-                opcionAlta_TurnoUrgente();
+                opcionAlta_Turno(TurnosU);
                 break;
             case 2:
-                opcionAlta_TurnoNormal();
+                opcionAlta_Turno(Turnos);
                 break;
             case 3:
-                opcionProximo();
+
+                add_listadoAtendidos(TurnosA, opcionProximo());
+
                 break;
             case 4:
-                opcionListadoPendientes();
+                if(TurnosU!=NULL)
+                {
+                 opcionListado(TurnosU, "Lista de Turnos Urgentes");
+                }
+                if(Turnos!=NULL)
+                {
+                 opcionListado(Turnos, "Lista de Turnos Regulares");
+                }
 
                 break;
             case 5:
-                opcionListadoAtendidos();
+
+                if(TurnosU!=NULL)
+                {
+                 opcionListadoAtendidos(TurnosU, "Lista de Turnos Urgentes Atendidos");
+                }
+                if(Turnos!=NULL)
+                {
+                 opcionListadoAtendidos(Turnos, "Lista de Turnos Regulares Atendidos");
+                }
                 break;
             case 6:
 
@@ -45,7 +62,7 @@ int vista_mostrarMenu()
         }
     }
 
-    return 0;
+   */ return 0;
 }
 
 int vista_opcion(char mensaje[], int min, int max)
