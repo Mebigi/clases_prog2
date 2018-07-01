@@ -21,7 +21,9 @@ int opcionAlta_Turno(ArrayList* this, char nombrearchivo[])
 
     if(al_add(this,nuevoTurno)==0) //0=es ok
     {
-        md_guardar_text(this,nombrearchivo);
+        //md_guardar_text(this,nombrearchivo);
+        md_guardar_bin(this,nombrearchivo);
+
         retorno =1;
 
     }

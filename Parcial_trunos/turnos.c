@@ -87,8 +87,17 @@ int turno_setDni(Turno* this,char* dni)
 
     if(this!=NULL)
     {
+        int tam=strlen(dni);
+        if(tam>50)
+        {
+            printf("Error %d\n", tam);
+            retorno=-1;
+        }
+        else{
         strcpy(this->dni,dni);
         retorno =1;
+        }
+
 
     }
 

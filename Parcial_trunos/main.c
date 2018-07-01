@@ -6,6 +6,7 @@
 #include "ArrayList.h"
 #include "Vista.h"
 #include "controlador.h"
+#include "manejadorDatos.h"
 
 
 int main()
@@ -16,15 +17,19 @@ int main()
     ArrayList* TurnosA = al_newArrayList();
 
 
+//trabajo bin
 
+    md_carga_bin("turnos.bat",Turnos);
+    md_carga_bin("turnosU.bat",TurnosU);
+    md_carga_bin("turnosA.bat",TurnosA);
 
-    //cont_inicio(Turnos, "turnos.bat");
-    //cont_inicio(TurnosU, "turnosU.bat");
-    //cont_inicio(TurnosA, "turnosA.bat");
+    //trabajo csv
 
-    md_cargar_text(Turnos, "turnos.csv");
-    md_cargar_text(TurnosU, "turnosU.csv");
-    md_cargar_text(TurnosA, "turnosA.csv");
+    /*
+     md_cargar_text(Turnos, "turnos.csv");
+     md_cargar_text(TurnosU, "turnosU.csv");
+     md_cargar_text(TurnosA, "turnosA.csv");
+     */
 
     Turno* proximo=NULL;
 
@@ -36,63 +41,76 @@ int main()
 
         switch(option)
         {
-            case 1:
-                opcionAlta_Turno(TurnosU,"turnosU.csv");
-                break;
-            case 2:
-                opcionAlta_Turno(Turnos,"turnos.csv");
-                break;
-            case 3:
+        case 1:
+            //opcionAlta_Turno(TurnosU,"turnosU.csv");
+            opcionAlta_Turno(TurnosU,"turnosU.bat");
+            break;
+        case 2:
+            //opcionAlta_Turno(Turnos,"turnos.csv");
+            opcionAlta_Turno(Turnos,"turnos.bat");
+            break;
+        case 3:
+            proximo = opcionProximo(TurnosU, "Turnos Urgentes");
+            if(add_listadoAtendidos(TurnosA,proximo)==0)
+            {
+                /*
+                md_guardar_text(TurnosA,"turnosA.csv");
+                md_guardar_text(TurnosU,"turnosU.csv");
+                */
+                md_guardar_bin(TurnosA,"turnosA.bat");
+                md_guardar_bin(TurnosU,"turnosU.bat");
 
-                proximo = opcionProximo(TurnosU, "Turnos Urgentes");
+            }
+            else
+            {
+
+                printf("NO hay pacientes URGENTES para atender\n");
+                proximo = opcionProximo(Turnos, "Turnos Regulares");
                 if(add_listadoAtendidos(TurnosA,proximo)==0)
                 {
-                    md_guardar_text(TurnosA,"turnosA.csv");
-                    md_guardar_text(TurnosU,"turnosU.csv");
-
-                }
-                else
-                 {
-
-                 printf("NO hay pacientes URGENTES para atender\n");
-
-                 proximo = opcionProximo(Turnos, "Turnos Regulares");
-                if(add_listadoAtendidos(TurnosA,proximo)==0)
-                {
+                    /*
                     md_guardar_text(TurnosA,"turnosA.csv");
                     md_guardar_text(Turnos,"turnos.csv");
+                    */
+                    md_guardar_bin(TurnosA,"turnosA.bat");
+                    md_guardar_bin(Turnos,"turnos.bat");
+
 
                 }
                 else
                 {
                     printf("NO hay pacientes para atender\n");
-                     }
                 }
+            }
 
 
-                break;
-            case 4:
-                if(TurnosU!=NULL)
-                {
-                 opcionListado(TurnosU, "Lista de Turnos Urgentes");
-                }
-                if(Turnos!=NULL)
-                {
-                 opcionListado(Turnos, "Lista de Turnos Regulares");
-                }
+            break;
+        case 4:
+            if(TurnosU!=NULL && (al_len(TurnosU)>0))
+            {
+                opcionListado(TurnosU, "Lista de Turnos Urgentes");
+            }
+            if(Turnos!=NULL && (al_len(Turnos)>0))
+            {
+                opcionListado(Turnos, "Lista de Turnos Regulares");
+            }
+            if(al_len(TurnosU)==0 && al_len(Turnos)==0)
+            {
+                printf("NO hay Pacientes\n");
+            }
 
-                break;
-            case 5:
+            break;
+        case 5:
 
-                if(TurnosA!=NULL)
-                {
-                 opcionListado_sort(TurnosA, "Lista de Turnos Atendidos");
-                }
+            if(TurnosA!=NULL)
+            {
+                opcionListado_sort(TurnosA, "Lista de Turnos Atendidos");
+            }
 
-                break;
-            case 6:
+            break;
+        case 6:
 
-                break;
+            break;
 
 
 

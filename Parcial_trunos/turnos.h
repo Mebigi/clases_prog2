@@ -6,9 +6,9 @@ typedef struct{
 
 Turno* turno_nuevo(void);
 int prod_delete(Turno* this);
-int turno_set_id_turno(Turno* this,int id);
+int turno_set_id_turno(Turno* this,int);
 int turno_get_id_turno(Turno* this);
-int turno_setDni(Turno* this,char* dni);
+int turno_setDni(Turno* ,char*);
 char* turno_getDni(Turno* this);
 Turno* turno_ingreso();
 void turno_print(Turno*);

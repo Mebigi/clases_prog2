@@ -104,9 +104,9 @@ int md_cargar_text(ArrayList* this, char nombreArchivo[])
                 r = fscanf(pFile,"%[^,],%[^\n]\n",var1,var2);
                 if(r==2)
                 {
-                    //printf("Lei: %s %s %s %s\n",var1,var2,var3,var4);
-                    strncpy((aux)->dni,var1,sizeof((aux)->dni));
-                    (aux)->id_turno = atoi(var2);
+                    //printf("Lei: %s %s\n",var1,var2);
+                    turno_setDni(aux,var1);
+                    turno_set_id_turno(aux,atoi(var2));
                     retorno =1;
 
                     al_add(this,(aux));
