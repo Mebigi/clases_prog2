@@ -1,0 +1,229 @@
+# depslib dependency file v1.0
+1529419962 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"ingresodatos.h"
+	<ctype.h>
+
+1529411250 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\arraylist.h
+
+1529411250 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\employee.h
+
+1529411250 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\ingresodatos.h
+
+1529411250 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1529419675 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"parser.h"
+	"Employee.h"
+	"ingresodatos.h"
+
+1529411250 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\parser.h
+
+1529411250 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+
+1529419583 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529353124 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529349957 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\arraylist.h
+
+1529364330 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"ingresodatos.h"
+	<ctype.h>
+
+1529364456 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\employee.h
+
+1529349957 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\ingresodatos.h
+
+1529360109 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1529364420 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"parser.h"
+	"Employee.h"
+	"ingresodatos.h"
+
+1529349957 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\parser.h
+
+1529351673 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+
+1529498039 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529445295 c:\programacion1cuatri\clases_prog2\practicamiarraylist\arraylist.h
+
+1529505654 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"ingresodatos.h"
+	<ctype.h>
+
+1529505654 c:\programacion1cuatri\clases_prog2\practicamiarraylist\employee.h
+
+1529445295 c:\programacion1cuatri\clases_prog2\practicamiarraylist\ingresodatos.h
+
+1529445295 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1529510074 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+
+1529507316 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"parser.h"
+	"Employee.h"
+	"ingresodatos.h"
+
+1529505654 c:\programacion1cuatri\clases_prog2\practicamiarraylist\parser.h
+
+1530476971 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530457681 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\arraylist.h
+
+1530476996 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\employee.h
+
+1530308904 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\ingresodatos.h
+
+1530470940 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1530475073 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530308904 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\parser.h
+
+1530459090 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+
+1530457039 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530473720 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530468377 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\vista.h
+
+1530473707 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\controlador.h
+
+1530469920 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\manejadordatos.h
+
+1530475047 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530469982 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
