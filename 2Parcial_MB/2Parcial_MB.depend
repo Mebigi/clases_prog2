@@ -1,0 +1,82 @@
+# depslib dependency file v1.0
+1530540886 source:c:\test\mercedesbigi\clases_prog2\2parcial_mb\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530536876 c:\test\mercedesbigi\clases_prog2\2parcial_mb\arraylist.h
+
+1530539100 source:c:\test\mercedesbigi\clases_prog2\2parcial_mb\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Empleado.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530539278 c:\test\mercedesbigi\clases_prog2\2parcial_mb\empleado.h
+
+1530531320 c:\test\mercedesbigi\clases_prog2\2parcial_mb\ingresodatos.h
+
+1530541446 c:\test\mercedesbigi\clases_prog2\2parcial_mb\vista.h
+
+1530539278 c:\test\mercedesbigi\clases_prog2\2parcial_mb\controlador.h
+
+1530531320 c:\test\mercedesbigi\clases_prog2\2parcial_mb\manejadordatos.h
+
+1530541683 source:c:\test\mercedesbigi\clases_prog2\2parcial_mb\empleado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Empleado.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530531320 source:c:\test\mercedesbigi\clases_prog2\2parcial_mb\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1530541589 source:c:\test\mercedesbigi\clases_prog2\2parcial_mb\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Empleado.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530541392 source:c:\test\mercedesbigi\clases_prog2\2parcial_mb\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Empleado.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530532848 source:c:\test\mercedesbigi\clases_prog2\2parcial_mb\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"empleado.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
