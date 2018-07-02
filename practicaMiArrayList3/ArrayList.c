@@ -634,18 +634,19 @@ int al_nueva(ArrayList* this, int (*pFunc)(void*))
 
     if(this!= NULL && pFunc!= NULL)
     {
-
-    returnAux=0;
-
     void* aux;
-
     int tam= al_len(this);
+    returnAux =0;
 
     for(int i=0; i<tam; i++)
     {
         aux=al_get(this, i);
 
-        pFunc(aux);
+        if(!pFunc(aux))
+        {
+            al_remove(this,i);
+
+        }
 
     }
 

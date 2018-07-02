@@ -21,28 +21,32 @@
 typedef struct{
     int id;
     char name[50];
+    char sexo[50];
     int entero;
     float flotante;
-}Employee;
 
 
-int employee_compareName(void* pEmployeeA,void* pEmployeeB);
-int employee_compareEntero(void* EmployeeA,void* EmployeeB);
-void employee_print(Employee*);
-Employee* employee_new(void);
-int employee_setId(Employee* , int );
-int employee_getId(Employee* );
-char* employee_getName(Employee* );
-int employee_SetName(Employee* , char* );
-int employee_set_entero(Employee* , int );
-int employee_get_entero(Employee* );
-int employee_set_flotante(Employee* , float );
-float employee_get_flotante(Employee* );
-void employee_ingresoNombre(Employee* this, int , int );
-void employee_ingresoEntero(Employee* this, int , int );
-void employee_ingresoFlotante(Employee* this, int , int );
-Employee* employee_ingreso(void);
-int calculo(void* EmployeeA);
+}Alumno;
+
+
+int alumno_compareName(void* pAlumnoA,void* pAlumnoB);
+int alumno_compareEntero(void* AlumnoA,void* AlumnoB);
+void alumno_print(Alumno*);
+Alumno* alumno_new(void);
+int alumno_setId(Alumno* , int );
+int alumno_getId(Alumno* );
+char* alumno_getName(Alumno* );
+int alumno_SetName(Alumno* , char* );
+int alumno_set_entero(Alumno* , int );
+int alumno_get_entero(Alumno* );
+int alumno_set_flotante(Alumno* , float );
+float alumno_get_flotante(Alumno* );
+void alumno_ingresoNombre(Alumno* this, int , int );
+void alumno_ingresoEntero(Alumno* this, int , int );
+void alumno_ingresoFlotante(Alumno* this, int , int );
+Alumno* alumno_ingreso(void);
+int calculo(void* AlumnoA);
+int mayor(void* AlumnoA);
 
 
 #endif // _EMPLOYEE_H

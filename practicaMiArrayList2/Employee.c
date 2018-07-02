@@ -273,46 +273,43 @@ return nuevoEmployee;
 
 }
 
-Employee* calculo(void* EmployeeA)
+int calculo(void* EmployeeA)
 {
+    Employee* aux = NULL;
 
+    int retorno=0;
 
-   Employee* aux= NULL;
-
-   if (EmployeeA!=NULL)
-   {
-    float flotante=0;
-    aux= (Employee*)EmployeeA;
-    int entero;
-
-
-   entero = employee_get_entero(aux);
-
-    if(entero<=176 && entero>0)
+    if (EmployeeA!=NULL)
     {
-      flotante=(float)entero*180;
+        float flotante=0;
+
+        aux= (Employee*)EmployeeA;
+        int entero;
+
+
+        entero = employee_get_entero(aux);
+
+        if(entero<=176 && entero>0)
+        {
+            flotante=(float)entero*180;
+        }
+        else if (entero>176 && entero<209)
+        {
+            flotante=(float)176*180;
+            flotante+=(float)(entero-176)*270;
+        }
+        else if (entero>=209)
+        {
+            flotante=(float)176*180;
+            flotante+=(float)(entero-176)*270;
+            flotante+=(float)(entero-208)*360;
+        }
+        int retorno=1;
+
+        employee_set_flotante(aux,flotante);
     }
-    else if (entero>176 && entero<209)
-    {
-       flotante=(float)entero*180;
-       flotante*=(float)(entero-176)*270;
-    }
-    else if (entero>=209)
-    {
-       flotante=(float)entero*180;
-       flotante*=(float)(entero-176)*270;
-       flotante*=(float)(entero-208)*270;
-    }
 
-    employee_set_flotante(aux,flotante);
-
-
-   }
-
-
-
-
-    return aux;
+    return retorno;
 
 }
 

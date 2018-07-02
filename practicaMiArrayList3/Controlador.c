@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Employee.h"
+#include "Alumno.h"
 #include "ingresodatos.h"
 #include "ArrayList.h"
 #include "Vista.h"
@@ -9,16 +9,16 @@
 #include "manejadorDatos.h"
 
 
-int opcionAlta_Employee(ArrayList* this, char nombrearchivo[])
+int opcionAlta_Alumno(ArrayList* this, char nombrearchivo[])
 {
 
  int retorno=-1;
  if(this!=NULL)
  {
-    Employee* nuevoEmployee;
-    nuevoEmployee = employee_ingreso();
+    Alumno* nuevoAlumno;
+    nuevoAlumno = alumno_ingreso();
 
-    if(al_add(this,nuevoEmployee)==0) //0=es ok
+    if(al_add(this,nuevoAlumno)==0) //0=es ok
     {
         md_guardar_text(this,nombrearchivo);
         //md_guardar_bin(this,nombrearchivo);
@@ -38,7 +38,7 @@ int opcionListado(ArrayList* this, char* encabezado)
     {
 
     printf("\n%s\n", encabezado);
-    employees_print_all(this);
+    alumnos_print_all(this);
     }
 
     return 0;
@@ -47,7 +47,7 @@ int opcionListado(ArrayList* this, char* encabezado)
 
 
 
-int add_listadoEmpleados2(ArrayList* this, Employee* empleado)
+int add_listadoEmpleados2(ArrayList* this, Alumno* empleado)
 {
 
  int retorno=-1;
@@ -64,33 +64,33 @@ int add_listadoEmpleados2(ArrayList* this, Employee* empleado)
 
 }
 
-void employee_delete(ArrayList* this)
+void alumno_delete(ArrayList* this)
 {
-   //employees_print_all(listaEmpleados);
+   //alumnos_print_all(listaEmpleados);
    int index;
    int id;
-   Employee* returnAux = NULL;
+   Alumno* returnAux = NULL;
 
    id= IngresarEntero("\n\nIngrese El ID que desea eliminar", 1, 100000);
-   index= employees_Buscar(this ,id);
+   index= alumnos_Buscar(this ,id);
    returnAux = al_pop(this,index);
 
-   employee_print(returnAux);
+   alumno_print(returnAux);
 
 
 }
 
 
-int employees_Buscar(ArrayList* this, int id)
+int alumnos_Buscar(ArrayList* this, int id)
 {
-  Employee* aux;
+  Alumno* aux;
   int len;
 
   int index=-1;
   len=al_len(this);
   for (int i=0; i<len; i++)
   {
-    aux = (Employee*)al_get(this, i);//apunta
+    aux = (Alumno*)al_get(this, i);//apunta
 
 
     if (aux->id==id)
@@ -106,17 +106,17 @@ int employees_Buscar(ArrayList* this, int id)
 }
 
 
-void employees_sort(ArrayList* this, int orden)
+void alumnos_sort(ArrayList* this, int orden)
 {
 
-  al_sort(this,employee_compareName,orden);
+  al_sort(this,alumno_compareName,orden);
 
 }
 
-void employees_sortEntero(ArrayList* this, int orden)
+void alumnos_sortEntero(ArrayList* this, int orden)
 {
 
-  al_sort(this,employee_compareEntero,orden);
+  al_sort(this,alumno_compareEntero,orden);
 
 }
 
@@ -139,6 +139,33 @@ int agregar_flotante(ArrayList* this, ArrayList* this2)
             }
         else{
                  md_guardar_text(this, "empleados2.cvs");
+
+            }
+
+        }
+}
+
+int selec(ArrayList* this, ArrayList* this2)
+{
+
+    int returnAux = -1;
+
+    int tam;
+
+    if (this !=NULL && this!=NULL )
+    {
+        this2= al_clone(this);
+
+        if(al_nueva(this2,mayor)!=0)
+            {
+
+                printf("Ocurrio un error al agregar los datos\n");
+
+            }
+        else{
+                 md_guardar_text(this2, "salida.csv");
+                 printf("se creo el archivo de salida\n");
+
 
             }
 

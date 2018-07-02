@@ -1,16 +1,16 @@
 # depslib dependency file v1.0
-1529419962 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\employee.c
+1529419962 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\alumno.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"ArrayList.h"
-	"Employee.h"
+	"Alumno.h"
 	"ingresodatos.h"
 	<ctype.h>
 
 1529411250 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\arraylist.h
 
-1529411250 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\employee.h
+1529411250 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\alumno.h
 
 1529411250 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\ingresodatos.h
 
@@ -27,7 +27,7 @@
 	<stdlib.h>
 	"ArrayList.h"
 	"parser.h"
-	"Employee.h"
+	"Alumno.h"
 	"ingresodatos.h"
 
 1529411250 c:\test\mercedesbigi\clases_prog2\practicamiarraylist\parser.h
@@ -37,7 +37,7 @@
 	<stdlib.h>
 	<string.h>
 	"ArrayList.h"
-	"Employee.h"
+	"Alumno.h"
 
 1529419583 source:c:\test\mercedesbigi\clases_prog2\practicamiarraylist\arraylist.c
 	<stdio.h>
@@ -53,16 +53,16 @@
 
 1529349957 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\arraylist.h
 
-1529364330 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\employee.c
+1529364330 source:c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\alumno.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"ArrayList.h"
-	"Employee.h"
+	"Alumno.h"
 	"ingresodatos.h"
 	<ctype.h>
 
-1529364456 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\employee.h
+1529364456 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\alumno.h
 
 1529349957 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\ingresodatos.h
 
@@ -79,7 +79,7 @@
 	<stdlib.h>
 	"ArrayList.h"
 	"parser.h"
-	"Employee.h"
+	"Alumno.h"
 	"ingresodatos.h"
 
 1529349957 c:\1ercuatrimestretecnicatura\clases_prog2\practicamiarraylist\parser.h
@@ -89,7 +89,7 @@
 	<stdlib.h>
 	<string.h>
 	"ArrayList.h"
-	"Employee.h"
+	"Alumno.h"
 
 1529498039 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist\arraylist.c
 	<stdio.h>
@@ -99,16 +99,16 @@
 
 1529445295 c:\programacion1cuatri\clases_prog2\practicamiarraylist\arraylist.h
 
-1529505654 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist\employee.c
+1529505654 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist\alumno.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"ArrayList.h"
-	"Employee.h"
+	"Alumno.h"
 	"ingresodatos.h"
 	<ctype.h>
 
-1529505654 c:\programacion1cuatri\clases_prog2\practicamiarraylist\employee.h
+1529505654 c:\programacion1cuatri\clases_prog2\practicamiarraylist\alumno.h
 
 1529445295 c:\programacion1cuatri\clases_prog2\practicamiarraylist\ingresodatos.h
 
@@ -125,23 +125,23 @@
 	<stdlib.h>
 	<string.h>
 	"ArrayList.h"
-	"Employee.h"
+	"Alumno.h"
 
 1529507316 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist\main.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
 	"parser.h"
-	"Employee.h"
+	"Alumno.h"
 	"ingresodatos.h"
 
 1529505654 c:\programacion1cuatri\clases_prog2\practicamiarraylist\parser.h
 
-1530480854 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\employee.c
+1530480854 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\alumno.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
-	"Employee.h"
+	"Alumno.h"
 	"ingresodatos.h"
 	"ArrayList.h"
 	"Vista.h"
@@ -150,7 +150,7 @@
 
 1530457681 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\arraylist.h
 
-1530480964 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\employee.h
+1530480964 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\alumno.h
 
 1530308904 c:\programacion1cuatri\clases_prog2\practicamiarraylist2\ingresodatos.h
 
@@ -166,7 +166,7 @@
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
-	"Employee.h"
+	"Alumno.h"
 	"ingresodatos.h"
 	"ArrayList.h"
 	"Vista.h"
@@ -180,7 +180,7 @@
 	<stdlib.h>
 	<string.h>
 	"ArrayList.h"
-	"Employee.h"
+	"Alumno.h"
 
 1530481173 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist2\arraylist.c
 	<stdio.h>
@@ -192,7 +192,7 @@
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
-	"Employee.h"
+	"Alumno.h"
 	"ingresodatos.h"
 	"ArrayList.h"
 	"Vista.h"
@@ -209,7 +209,7 @@
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
-	"Employee.h"
+	"Alumno.h"
 	"ingresodatos.h"
 	"ArrayList.h"
 	"Vista.h"
@@ -220,7 +220,88 @@
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
-	"Employee.h"
+	"Alumno.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530495645 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist3\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530457681 c:\programacion1cuatri\clases_prog2\practicamiarraylist3\arraylist.h
+
+1530495388 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist3\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Alumno.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530489886 c:\programacion1cuatri\clases_prog2\practicamiarraylist3\alumno.h
+
+1530308904 c:\programacion1cuatri\clases_prog2\practicamiarraylist3\ingresodatos.h
+
+1530468377 c:\programacion1cuatri\clases_prog2\practicamiarraylist3\vista.h
+
+1530483713 c:\programacion1cuatri\clases_prog2\practicamiarraylist3\controlador.h
+
+1530469920 c:\programacion1cuatri\clases_prog2\practicamiarraylist3\manejadordatos.h
+
+1530470940 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist3\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1530495265 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Alumno.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530484860 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist3\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Alumno.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530494979 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist3\alumno.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Alumno.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1530483713 source:c:\programacion1cuatri\clases_prog2\practicamiarraylist3\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Alumno.h"
 	"ingresodatos.h"
 	"ArrayList.h"
 	"Vista.h"

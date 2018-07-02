@@ -14,7 +14,7 @@ int main()
 {
 
     ArrayList* Empleados = al_newArrayList();
-    //ArrayList* Empleados2 = al_newArrayList();
+    ArrayList* Empleados2 = al_newArrayList();
 
 
 
@@ -27,7 +27,7 @@ int main()
     //trabajo csv
 
 
-     md_cargar_text(Empleados,"data_p2.csv");
+     md_cargar_text(Empleados,"empleados.csv");
      //md_cargar_text(Empleados2,"empleados2.csv");
 
 
@@ -41,7 +41,7 @@ int main()
         {
         case 1:
             //Alta
-            opcionAlta_Employee(Empleados,"data_p2.csv");
+            opcionAlta_Employee(Empleados,"empleados.csv");
             //opcionAlta_Employee(Empleados,"empleados.bat");
             break;
         case 2:
@@ -56,6 +56,7 @@ int main()
             }
             break;
         case 3:
+            agregar_flotante(Empleados, Empleados2);
 
             break;
         case 4:
