@@ -27,7 +27,6 @@ int opcionListadoSueldo(ArrayList* this, char* encabezado)
 {
     if (this!= NULL)
     {
-
     printf("\n%s\n", encabezado);
     empleados_print_all_sueldo(this);
     }
@@ -40,7 +39,6 @@ int add_listadoEmpleados2(ArrayList* this, Empleado* empleado)
 {
 
  int retorno=-1;
-
  if (empleado!=NULL && this!=NULL)
  {
 
@@ -101,6 +99,35 @@ void empleados_sort(ArrayList* this, int orden)
   al_sort(this,empleado_compareName,orden);
 
 }
+
+
+
+void est1_print_all(ArrayList* this)
+{
+
+  if(this != NULL)
+ {
+  Est1* aux;
+  int len;
+
+  len=al_len(this);
+
+  for (int i=0; i<len; i++)
+  {
+    aux = (Est1*)al_get(this, i);//apunta
+
+    empleado_print(aux);
+    if(i%100==0 && i>0)
+    {
+        printf("\n\n");
+        system("pause");
+    }
+
+  }
+}
+
+}
+
 
 
 

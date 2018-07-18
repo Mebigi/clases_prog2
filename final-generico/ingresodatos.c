@@ -7,6 +7,71 @@
 
 //INGRESO Y VALIDAR DATOS INGRESADOS
 
+long int esNumerolong(char numero[], int tam)
+{
+
+    long int esnum = 0;
+
+    int len = strlen(numero);
+
+    for (int i=0; i<len; i++)
+    {
+        if (isdigit(numero[i]))
+        {
+            esnum = 1;
+        }
+        else
+        {
+
+            esnum = 0;
+            break;
+
+        }
+
+
+
+    }
+
+    return esnum;
+
+}
+
+
+long int Ingresarlong(char mensaje[])
+{
+    char numero[9];
+    long int entero;
+    int esnum=0;
+
+    do
+    {
+        printf("%s", mensaje);
+        fflush(stdin);
+        gets(numero);
+
+        if(strlen(numero) >= 7 && strlen(numero) < 9)
+        {
+            esnum = esNumerolong(numero, 9);
+        }
+        else
+        {
+            printf("Error, ");
+        }
+
+
+    }
+    while (esnum == 0);
+
+    entero = atol(numero);
+
+    return entero;
+}
+
+
+
+
+
+
 float IngresarEnteroFlotante(char mensaje[], int min, int max)
 {
     char datoflot[15];
@@ -19,7 +84,6 @@ float IngresarEnteroFlotante(char mensaje[], int min, int max)
     gets(datoflot);
 
     numero = validarEnteroFlotante(datoflot, min, max, 15);//9999999.000000 14 son las colunas mas el espacio al final
-
     numerovalidado = RangoValidoFlotante(numero, min, max);
 
 
@@ -400,6 +464,49 @@ void getStringNumero(char mensaje[],char input[], int min, int max)
 
         }
         while (esnum == 0);
+}
+
+
+//VALIDACION Y FORMATO
+
+
+void confirma_set(int retorno)
+{
+    if(retorno == 0)
+    {
+        printf("Error, al intentar cargar el dato");
+    }
+}
+
+
+void confirma_getNum(int retorno)
+{
+    if(retorno == -1)
+    {
+        printf("Error, al intentar leer el dato");
+    }
+}
+
+
+void confirma_getText(char* retorno)
+{
+    if(retorno == NULL)
+    {
+        printf("Error, al intentar leer el dato");
+    }
+}
+
+
+
+char* Formato_Titulo(char* texto)
+{
+    if(texto!= NULL)
+    {
+           strlwr(texto);
+           texto[0]=toupper(texto[0]);
+    }
+
+    return texto;
 }
 
 

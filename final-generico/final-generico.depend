@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1530495645 source:c:\programacion1cuatri\finales\modelo\final-generico\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530457681 c:\programacion1cuatri\finales\modelo\final-generico\arraylist.h
+
+1531615553 source:c:\programacion1cuatri\finales\modelo\final-generico\main.c
+	<stdio.h>
+	<stdlib.h>
+	"est1.h"
+	"ArrayList.h"
+
+1531620828 c:\programacion1cuatri\finales\modelo\final-generico\est1.h
+	"ArrayList.h"
+
+1531620841 source:c:\programacion1cuatri\finales\modelo\final-generico\est1.c
+	"est1.h"
+	"ArrayList.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1530495645 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530457681 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\arraylist.h
+
+1531955327 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\main.c
+	<stdio.h>
+	<stdlib.h>
+	"est1.h"
+	"ArrayList.h"
+	"Controlador.h"
+
+1531956593 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\est1.h
+	"ArrayList.h"
+
+1531957878 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\est1.c
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1531950906 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1531950957 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\ingresodatos.h
+
+1531957524 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\controlador.h
+
+1531957996 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"est1.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"controlador.h"
+

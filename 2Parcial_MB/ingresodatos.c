@@ -403,3 +403,47 @@ void getStringNumero(char mensaje[],char input[], int min, int max)
 }
 
 
+//VALIDACION Y FORMATO
+
+
+void confirma_set(int retorno)
+{
+    if(retorno == 0)
+    {
+        printf("Error, al intentar cargar el dato");
+    }
+}
+
+
+void confirma_getNum(int retorno)
+{
+    if(retorno == -1)
+    {
+        printf("Error, al intentar leer el dato");
+    }
+}
+
+
+void confirma_getText(char* retorno)
+{
+    if(retorno == NULL)
+    {
+        printf("Error, al intentar leer el dato");
+    }
+}
+
+
+
+char* Formato_Titulo(char* texto)
+{
+    if(texto!= NULL)
+    {
+           strlwr(texto);
+           texto[0]=toupper(texto[0]);
+    }
+
+    return texto;
+}
+
+
+

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "Empleado.h"
 #include "ingresodatos.h"
 #include "ArrayList.h"
@@ -61,7 +62,7 @@ void empleados_print_all_sueldo(ArrayList* this)
 
   if(this != NULL)
  {
- Empleado* aux;
+  Empleado* aux;
   int len;
 
   len=al_len(this);
@@ -76,9 +77,6 @@ void empleados_print_all_sueldo(ArrayList* this)
         printf("\n\n");
         system("pause");
     }
-
-
-
 
   }
 }
@@ -106,9 +104,6 @@ void empleados_print_all(ArrayList* this)
         system("pause");
     }
 
-
-
-
   }
 }
 
@@ -128,15 +123,15 @@ Empleado* empleado_new(void)
 
 
 
+
+
 int empleado_setId(Empleado* this, int id)
 {
 
     if(this!=NULL)
     {
-
     this->id=id;
     }
-
     return 0;
 
 }
@@ -144,14 +139,11 @@ int empleado_setId(Empleado* this, int id)
 int empleado_getId(Empleado* this)
 {
 
-    int id;
-
-
+    int id=-1;
     if(this!=NULL)
     {
         id=this->id;
     }
-
     return id;
 }
 
@@ -187,7 +179,7 @@ int empleado_SetName(Empleado* this, char* texto)
 char* empleado_getDireccion(Empleado* this)
 {
 
-    char* texto;
+    char* texto= NULL;
 
 
     if(this!=NULL)
@@ -220,11 +212,8 @@ void empleado_ingresoNombre(Empleado* this, int min, int max)
     if(this!=NULL)
     {
          getStringletras("\nIngresar Nombre: ",empleado_getName(this), min, max);
-
-            strlwr(empleado_getName(this));
-
-            this->name[0]=toupper(this->name[0]);
-
+         strlwr(empleado_getName(this));
+         this->name[0]=toupper(this->name[0]);
 
     }
 
@@ -328,3 +317,67 @@ int calculoSueldo(void* EmpleadoA)
 }
 
 
+
+//contructor parametrizado
+
+/*Est1* est1_alta(int entero, char* texto, float flotante, long largo)
+{
+
+    Est1* nuevo;
+
+    nuevo= est1_nuevo();
+
+    if(nuevo != NULL)
+    {
+
+    }
+
+    //paso paramettro al nuevo dato
+
+    return nuevo;
+}
+*/
+
+
+/*
+
+Est1 est1_ingresoDatos(void)
+{
+
+
+//char name[50];
+int entero;
+float flotante;
+
+ int ultimoid;
+ Alumno* nuevoAlumno;
+
+
+ //getStringletras("Ingresar Nombre",name,3,50);
+ entero = IngresarEntero("\nIngresar Entero:",1, 10000);
+ //flotante = IngresarEnteroFlotante("\nIngresar flotante:",1, 1000000);
+
+
+
+ nuevoAlumno =alumno_new();
+
+ ultimoid= md_leer_ultimo("ultimoNro.txt");
+
+ if (nuevoAlumno!= NULL)
+ {
+    ultimoid++; // le suma antes para no repetir
+    alumno_setId(nuevoAlumno,ultimoid);
+    //alumno_SetName(nuevoAlumno,name);
+    alumno_ingresoNombre(nuevoAlumno, 2, 50);
+    alumno_ingresoSexo(nuevoAlumno, 2, 50);
+    alumno_set_entero(nuevoAlumno,entero);
+    //alumno_set_flotante(nuevoAlumno,flotante);
+
+    md_guardar_ultimo("ultimoNro.txt",ultimoid);
+
+ }
+
+return nuevoAlumno;
+
+}
+*/

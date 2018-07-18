@@ -20,6 +20,10 @@ int main()
      md_cargar_text(Empleados,"dataSueldo.csv");
      //md_cargar_text(Empleados2,"empleados2.csv");
 
+     char titulo[10]="menu";
+     Formato_Titulo(titulo);
+     printf("%s\n", titulo);
+
     int option=0;
     while(option != 6)
     {

@@ -80,3 +80,85 @@
 	"controlador.h"
 	"manejadorDatos.h"
 
+1531920407 source:c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1531920407 c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\arraylist.h
+
+1531921762 source:c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Empleado.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1531941431 c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\empleado.h
+
+1531941431 c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\ingresodatos.h
+
+1531920407 c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\vista.h
+
+1531920407 c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\controlador.h
+
+1531920407 c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\manejadordatos.h
+
+1531941431 source:c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1531935720 source:c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Empleado.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1531922784 source:c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Empleado.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1531920407 source:c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"empleado.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+
+1531941431 source:c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\empleado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Empleado.h"
+	"ingresodatos.h"
+	"ArrayList.h"
+	"Vista.h"
+	"controlador.h"
+	"manejadorDatos.h"
+

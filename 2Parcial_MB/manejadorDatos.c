@@ -79,7 +79,7 @@ int md_cargar_text(ArrayList* this, char nombreArchivo[])
 
     int retorno=-1;
 
-    if(this!=NULL)
+    if(this!=NULL && !(al_isEmpty(this)))
     {
 
         Empleado* aux;
@@ -105,10 +105,10 @@ int md_cargar_text(ArrayList* this, char nombreArchivo[])
                 r = fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",var1,var2,var3,var4);
                 if(r==4)
                 {
-                    empleado_setId(aux,atoi(var1));
-                    empleado_SetName(aux, var2);
-                    empleado_SetDireccion(aux, var3);
-                    empleado_set_horas(aux, atoi(var4));
+                    confirma_set(empleado_setId(aux,atoi(var1)));
+                    confirma_set(empleado_SetName(aux, var2));
+                    confirma_set(empleado_SetDireccion(aux, var3));
+                    confirma_set(empleado_set_horas(aux, atoi(var4)));
 
                     retorno =1;
 
