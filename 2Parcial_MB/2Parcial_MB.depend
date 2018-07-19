@@ -101,7 +101,7 @@
 
 1531941431 c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\empleado.h
 
-1531941431 c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\ingresodatos.h
+1531950906 c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\ingresodatos.h
 
 1531920407 c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\vista.h
 
@@ -150,7 +150,7 @@
 	"controlador.h"
 	"manejadorDatos.h"
 
-1531941431 source:c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\empleado.c
+1531946399 source:c:\1ercuatrimestretecnicatura\clases_prog2\2parcial_mb\empleado.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

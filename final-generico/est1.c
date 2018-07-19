@@ -1,10 +1,18 @@
-#include "est1.h"
-#include "ArrayList.h"
-#include "ingresodatos.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include "est1.h"
+#include "ArrayList.h"
+#include "ingresodatos.h"
+#include "Controlador.h"
+#include "manejadorDatos.h"
+#define MIN_ENTERO 1
+#define MAX_ENTERO 2000
+#define MAX_TEXTO 100
+#define MIN_TEXTO 3
+#define MIN_FLOTANTE 0
+#define MAX_FLOTANTE 999999
 
 //SETER AND GETER
 Est1* est1_nuevo(void)
@@ -98,7 +106,7 @@ float est1_get_flotante(Est1* this)
 }
 
 
-int est1_set_largo(Est1* this,long largo)
+int est1_set_largo(Est1* this,long int largo)
 {
     int retorno =0;
 
@@ -113,10 +121,10 @@ int est1_set_largo(Est1* this,long largo)
 
 }
 
-long est1_get_largo(Est1* this)
+long int est1_get_largo(Est1* this)
 {
 
-    long largo;
+    long int largo;
     if(this!=NULL)
     {
         largo=this->largo;
@@ -130,7 +138,33 @@ long est1_get_largo(Est1* this)
 
 //contructor parametrizado
 
-Est1* est1_ingresoDatos(int entero, char* texto, float flotante, long largo)
+
+
+Est1* est1_IngresoDatos(void)
+{
+
+        int entero;
+        float flotante;
+        char texto[MAX_TEXTO+1];
+        long int largo;
+
+
+        Est1* nuevo;
+
+        entero = IngresarEntero("\nIngresar entero\n", MIN_ENTERO,MAX_ENTERO);
+        getString("\nIngresar texto\n",texto, MIN_TEXTO, MAX_TEXTO);
+        flotante = IngresarEnteroFlotante("\nIngresar flotante\n",MIN_FLOTANTE,MAX_FLOTANTE);
+        largo = Ingresarlong("\nIngresar LONG dni\n");
+
+        nuevo = est1_SetDatos(entero,texto,flotante,largo);
+
+        return nuevo;
+
+}
+
+
+
+Est1* est1_SetDatos(int entero, char* texto, float flotante, long int largo)
 {
 
     Est1* nuevo;

@@ -31,47 +31,47 @@ int opcionAddListado(ArrayList*, Est1*);
 
 
 
-/** \brief
+/** \brief borra un elemento de la lista
  *
  * \param this ArrayList*
- * \return int
+ * \return int -1: ArrayList NULL 0: ArrayList no NULL 1: NO confirma 2: Cofirma borrrar el elemento
  *
  */
 int opcionDeleteDatoListado(ArrayList* );
 
 
 
-/** \brief
+/** \brief Modifica un elemento de la  Lista
  *
  * \param this ArrayList*
- * \return int
+ * \return int -1: ArrayList NULL 0: ArrayList no NULL 1: NO confirma la modificacion 2: Cofirma modificacion del elemento
  *
  */
 
 int opcionModificacionDatoListado(ArrayList*);
 
-/** \brief
+/** \brief Busca en un campo de un elemento de la lista y devuelve el indice
  *
  * \param this ArrayList*
  * \param clave int
- * \return int
+ * \return int en indice o -1 si no lo encuentra
  *
  */
 
 int opcionBuscarDato(ArrayList* , int );
 
 
-/** \brief
+/** \brief Ordena un Listado
  *
  * \param this ArrayList*
- * \param orden int
+ * \param orden int orden desdendente 1 ascendente 0
  * \return void
  *
  */
 void opcionOrdenarListado(ArrayList* , int );
 
 
-/** \brief
+/** \brief muestra en pantalla todos los campos de los elementos de la lista
  *
  * \param this ArrayList*
  * \return void

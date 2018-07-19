@@ -7,7 +7,7 @@ typedef struct
 int entero;
 char texto[50];
 float flotante;
-long largo;
+long int largo;
 }Est1;
 
 /** \brief aloja memoria para estructura de Est1
@@ -64,7 +64,7 @@ long largo;
  * \param long
  * \param Est1* estructura
  * \return entero Ok - > 1 Error -> 0
- */ int est1_set_largo(Est1*,long);
+ */ int est1_set_largo(Est1*,long int);
 
 
 
@@ -72,10 +72,30 @@ long largo;
  * \param long
  * \param Est1* estructura
  * \return long
- */ long est1_get_largo(Est1*);
+ */ long int est1_get_largo(Est1*);
 
 
-Est1* est1_ingresoDatos(int , char* , float , long );
+
+
+/** \brief Ingreso de datos del elementos por consola y los agregra a puntero a estructura
+ *
+ * \param void
+ * \return Est1* puntero a estructura o Est* NULL
+ *
+ */
+Est1* est1_IngresoDatos(void);
+
+
+/** \brief Seter de elementos ingresados a una estructura
+ *
+ * \param entero int
+ * \param texto char*
+ * \param flotante float
+ * \param largo int long
+ * \return Est1* Est1* puntero a estructura o Est* NULL
+ *
+ */
+Est1* est1_SetDatos(int , char* , float , long int);
 
 
 int est1_compareTexto(void* ,void* );

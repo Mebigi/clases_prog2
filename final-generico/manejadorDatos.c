@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Est1.h"
-#include "ingresodatos.h"
+#include <ctype.h>
+#include "est1.h"
 #include "ArrayList.h"
-#include "Vista.h"
-#include "controlador.h"
+#include "ingresodatos.h"
+#include "Controlador.h"
 #include "manejadorDatos.h"
 
 int md_carga_bin(char nombrearchivo[], ArrayList* this)
@@ -20,7 +20,7 @@ int md_carga_bin(char nombrearchivo[], ArrayList* this)
             do
             {
                 Est1* aux;
-                aux = (Est1*)alumno_new();
+                aux = (Est1*)est1_nuevo();
                 if(fread(aux,sizeof(Est1),1,pFile))
                 {
                     al_add(this,aux);
@@ -42,7 +42,7 @@ int md_guardar_bin(ArrayList* this,char nombrearchivo[])
 {
     int retorno=-1;
 
-    if(this!=NULL)
+    if(this!=NULL && !(al_isEmpty(this)))
     {
         Est1* aux;
         FILE *f;
@@ -82,6 +82,8 @@ int md_cargar_text(ArrayList* this, char nombreArchivo[])
     if(this!=NULL)
     {
 
+
+
         Est1* aux;
         FILE* pFile;
 
@@ -100,16 +102,15 @@ int md_cargar_text(ArrayList* this, char nombreArchivo[])
         {
             do
             {
-                aux = (Est1*) malloc(sizeof(Est1));//le asigna una dire de memoria cada vez que entra al while
-                r = fscanf(pFile,"%[^;];%[^;];%[^;];%[^\n]",var1,var2,var3,var4);
+               // aux = (Est1*) malloc(sizeof(Est1));//le asigna una dire de memoria cada vez que entra al while
+                aux =  est1_nuevo();
+                r = fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",var1,var2,var3,var4);
                 if(r==4)
                 {
-                    //printf("Lei: %s %s\n",var1,var2);
-                    alumno_setId(aux,atoi(var1));
-                    alumno_SetName(aux, var2);
-                    alumno_SetSexo(aux, var3);
-                    alumno_set_entero(aux,atoi(var4));
-                    //alumno_set_flotante(aux,atof(var4));
+
+                   //printf("%s,%s,%s,%s\n",var1,var2,var3,var4);
+                   aux = est1_SetDatos(atoi(var1), var2, atof(var3), atol(var4));
+
 
                     retorno =1;
 
@@ -158,7 +159,7 @@ int md_leer_ultimo(char nombrearchivo[])
 int md_guardar_text(ArrayList* this, char nombrearchivo[])
     {
         int retorno=-1;
-        if(this!=NULL)
+        if(this!=NULL && !(al_isEmpty(this)))
         {
             Est1* aux;
             FILE *f;
@@ -175,7 +176,7 @@ int md_guardar_text(ArrayList* this, char nombrearchivo[])
                 for (int i=0; i<len; i++)
                 {
                     aux = (Est1*)al_get(this, i);
-                    fprintf(f,"%d;%s;%s;%d\n",alumno_getId(aux),alumno_getName(aux),alumno_getSexo(aux),alumno_get_entero(aux));
+                    fprintf(f,"%d,%s,%f,%ld\n",est1_get_entero(aux),est1_get_texto(aux),est1_get_flotante(aux),est1_get_largo(aux));
 
                     retorno=1;
 

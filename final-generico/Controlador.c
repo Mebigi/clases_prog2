@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "est1.h"
-#include "ingresodatos.h"
 #include "ArrayList.h"
-#include "controlador.h"
+#include "ingresodatos.h"
+#include "Controlador.h"
+#include "manejadorDatos.h"
 #define MIN_ENTERO 1
 #define MAX_ENTERO 2000
 #define MAX_TEXTO 100
@@ -21,22 +23,12 @@ int opcionAlta(ArrayList* this)
     if(this!=NULL)
     {
 
-        int entero;
-        float flotante;
-        char texto[MAX_TEXTO+1];
-        long largo;
-        retorno=0;
-
         Est1* nuevo;
 
-        entero = IngresarEntero("\nIngresar entero\n", MIN_ENTERO,MAX_ENTERO);
-        getString("\nIngresar texto\n",texto, MIN_TEXTO, MAX_TEXTO);
-        flotante = IngresarEnteroFlotante("\nIngresar flotante\n",MIN_FLOTANTE,MAX_FLOTANTE);
-        largo = Ingresarlong("\nIngresar flotante\n");
-
-        nuevo = est1_ingresoDatos(entero,texto,flotante,largo);
+        nuevo= est1_IngresoDatos();
 
         if(nuevo!= NULL)
+
         {
             retorno=1;
             opcionAddListado(this,nuevo);
@@ -137,38 +129,30 @@ int opcionModificacionDatoListado(ArrayList* this)
         if(index != -1)
         {
             returnAux= al_get(this, index);
+
             est1_print(returnAux);
+
             retorno=1;
 
-            int entero;
-            float flotante;
-            char texto[MAX_TEXTO+1];
-            long largo;
+            Est1* modificado;
 
-                entero = IngresarEntero("\nIngresar entero\n", MIN_ENTERO,MAX_ENTERO);
-                getString("\nIngresar texto\n",texto, MIN_TEXTO, MAX_TEXTO);
-                flotante = IngresarEnteroFlotante("\nIngresar flotante\n",MIN_FLOTANTE,MAX_FLOTANTE);
-                largo = Ingresarlong("\nIngresar flotante\n");
+            modificado = est1_IngresoDatos();
 
-            if(Confirmacion("Confirma modificar el elemento de la lista"))
+            if(modificado!= NULL)
             {
-
-                Est1* nuevo;
-
-                nuevo = est1_ingresoDatos(entero,texto,flotante,largo);
-
-                if(nuevo!=NULL)
+                if(Confirmacion("Confirma modificar el elemento de la lista"))
                 {
-                    al_set(this,index,nuevo);
+                    al_set(this,index,modificado);
                     retorno=2;
                 }
 
             }
 
-        }
 
+
+        }
     }
-    return retorno;
+        return retorno;
 
 }
 
