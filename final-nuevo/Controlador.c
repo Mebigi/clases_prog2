@@ -361,10 +361,17 @@ int opcionDescontarProductos(ArrayList* this, ArrayList* this2)
 
             cantidad = prod_get_cantidad(aux);
 
-            confirma_set(prod_set_cantidad(aux, (cantidad-descontar)));
+            if((cantidad-descontar)>=0)
+            {
+                 confirma_set(prod_set_cantidad(aux, (cantidad-descontar)));
+                 md_guardar_Deposito(this2, "Dep1.csv");
+            }
+            else
+            {
+                 printf("La cantidad de producto a descontar supera al stock actual");
 
 
-            md_guardar_Deposito(this2, "Dep1.csv");
+            }
 
             }
 
