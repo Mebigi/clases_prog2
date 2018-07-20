@@ -385,8 +385,85 @@ int opcionDescontarProductos(ArrayList* this, ArrayList* this2)
 
             cantidad = prod_get_cantidad(aux);
 
-            confirma_set(prod_set_cantidad(aux, (cantidad-descontar)));
+            if((cantidad-descontar)>=0)
+            {
 
+                confirma_set(prod_set_cantidad(aux, (cantidad-descontar)));
+
+                 md_guardar_Deposito(this, "Dep0.csv");
+
+
+            }
+            else
+            {
+                 printf("La cantidad de producto a descontar supera al stock actual");
+
+
+            }
+
+
+        }
+
+
+    }
+
+
+    return retorno;
+}
+
+
+int opcionAgregarProductos(ArrayList* this, ArrayList* this2)
+{
+    int retorno=0;
+
+    Producto* aux;
+
+    if(this!=NULL && this2!=NULL)
+    {
+
+        retorno=1;
+        int id;
+        int cantidad;
+        int agregar;
+        int index=-1;
+
+        id = IngresarEntero("\n\nIngrese El Codigo del producto", 1, 100000);
+
+        index = opcionBuscarProducto(this, id);
+
+        if(index==-1)
+        {
+            index = opcionBuscarProducto(this2, id);
+            if(index==-1)
+            {
+               printf("El prodcutos no se encuantra en ningun deposito");
+            }
+            else
+            {
+            agregar = IngresarEntero("\n\nIngrese Cantidad a Agregar", 1, 100000);
+
+            aux = al_get(this2, index);
+
+            cantidad = prod_get_cantidad(aux);
+
+
+             confirma_set(prod_set_cantidad(aux, (cantidad+agregar)));
+             md_guardar_Deposito(this2, "Dep1.csv");
+
+
+            }
+
+        }
+        else
+        {
+
+            agregar = IngresarEntero("\n\nIngrese Cantidad a agregar", 1, 100000);
+
+            aux = al_get(this, index);
+
+            cantidad = prod_get_cantidad(aux);
+
+            confirma_set(prod_set_cantidad(aux, (cantidad+agregar)));
 
             md_guardar_Deposito(this, "Dep0.csv");
 

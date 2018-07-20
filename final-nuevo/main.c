@@ -76,6 +76,7 @@ int main()
 
             break;
         case 5:
+            opcionAgregarProductos(Deposito0,Deposito1);
 
             break;
         case 6:
