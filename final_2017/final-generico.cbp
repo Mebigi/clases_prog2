@@ -47,6 +47,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ingresodatos.h" />
+		<Unit filename="loge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loge.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -54,6 +58,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="manejadorDatos.h" />
+		<Unit filename="service.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="service.h" />
 		<Unit filename="vista.c">
 			<Option compilerVar="CC" />
 		</Unit>

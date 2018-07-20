@@ -10,28 +10,6 @@ float flotante;
 long int largo;
 }Est1;
 
-struct S_LogEntry
-{
- char date[11];
- char time[6];
- int serviceId;
- int gravedad;
- char msg[65];
-};
-typedef struct S_LogEntry LogEntry;
-
-
-struct S_Service
-{
- int id;
- char name[33];
- char email[65];
-};
-typedef struct S_Service Service;
-
-
-
-LogEntry* loge_nuevo(void);
 
 /** \brief aloja memoria para estructura de Est1
  *
@@ -46,18 +24,6 @@ LogEntry* loge_nuevo(void);
  * \return entero Ok - > 1 Error -> 0
  */ int est1_set_entero(Est1*, int );
 
-
- /** \brief setea entero en la estructura
- * \param entero a setear
- * \param Est1* puntero a estructura.
- * \return entero Ok - > 1 Error -> 0
-  */ int loge_set_serviceId(LogEntry* , int );
-
-/** \brief setea entero en la estructura
- * \param entero a setear
- * \param Est1* puntero a estructura.
- * \return entero Ok - > 1 Error -> 0
-  */ int loge_set_gravedad(LogEntry* , int );
 
 
  /** \brief devuelve entero de la estructura

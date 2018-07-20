@@ -3,6 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 #include "est1.h"
+#include "loge.h"
+#include "service.h"
 #include "ArrayList.h"
 #include "ingresodatos.h"
 #include "Controlador.h"

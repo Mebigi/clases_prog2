@@ -3,6 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 #include "est1.h"
+#include "loge.h"
+#include "service.h"
 #include "ArrayList.h"
 #include "ingresodatos.h"
 #include "Controlador.h"
@@ -23,63 +25,6 @@ Est1* est1_nuevo(void)
 
 }
 
-LogEntry* loge_nuevo(void)
-{
-    LogEntry* returnAux;
-    returnAux =(LogEntry*)malloc(sizeof(LogEntry));
-    return returnAux;
-
-}
-
-
-Service* serv_nuevo(void)
-{
-    Service* returnAux;
-    returnAux =(Service*)malloc(sizeof(Service));
-    return returnAux;
-
-}
-
-int loge_set_serviceId(LogEntry* this, int num)
-{
-    int retorno = 0;
-
-    if(this!=NULL)
-    {
-        this->serviceId=num;
-        retorno = 1;
-    }
-
-    return retorno;
-}
-
-
-int serv_set_id(Service* this, int num)
-{
-    int retorno = 0;
-
-    if(this!=NULL)
-    {
-        this->id=num;
-        retorno = 1;
-    }
-
-    return retorno;
-}
-
-
-int loge_set_gravedad(LogEntry* this, int num)
-{
-    int retorno = 0;
-
-    if(this!=NULL)
-    {
-        this->gravedad=num;
-        retorno = 1;
-    }
-
-    return retorno;
-}
 
 int est1_set_entero(Est1* this, int num)
 {
@@ -92,46 +37,6 @@ int est1_set_entero(Est1* this, int num)
     }
 
     return retorno;
-}
-
-
-int loge_get_serviceId(LogEntry* this)
-{
-
-    int num;
-    if(this!=NULL)
-    {
-        num=this->serviceId;
-    }
-
-    return num;
-}
-
-
-int serv_get_id(Service* this)
-{
-
-    int num;
-    if(this!=NULL)
-    {
-        num=this->id;
-    }
-
-    return num;
-}
-
-
-
-int loge_get_gravedad(LogEntry* this)
-{
-
-    int num;
-    if(this!=NULL)
-    {
-        num=this->gravedad;
-    }
-
-    return num;
 }
 
 
@@ -159,66 +64,7 @@ char* est1_get_texto(Est1* this)
     return texto;
 }
 
-char* serv_get_name(Service* this)
-{
-    char* texto = NULL;
 
-    if(this!=NULL)
-    {
-        texto = this->name;
-    }
-
-    return texto;
-}
-
-char* serv_get_email(Service* this)
-{
-    char* texto = NULL;
-
-    if(this!=NULL)
-    {
-        texto = this->email;
-    }
-
-    return texto;
-}
-
-
-char* loge_get_date(LogEntry* this)
-{
-    char* texto = NULL;
-
-    if(this!=NULL)
-    {
-        texto = this->date;
-    }
-
-    return texto;
-}
-
-char* loge_get_time(LogEntry* this)
-{
-    char* texto = NULL;
-
-    if(this!=NULL)
-    {
-        texto = this->time;
-    }
-
-    return texto;
-}
-
-char* loge_get_msg(LogEntry* this)
-{
-    char* texto = NULL;
-
-    if(this!=NULL)
-    {
-        texto = this->msg;
-    }
-
-    return texto;
-}
 
 int est1_set_texto(Est1* this, char* texto)
 {
@@ -233,50 +79,6 @@ int est1_set_texto(Est1* this, char* texto)
     return retorno;
 }
 
-
-
-
-
-int loge_set_msg(LogEntry* this, char* texto)
-{
-    int retorno =0;
-
-    if(this!=NULL)
-    {
-        strcpy(this->msg,texto);
-        retorno =1;
-    }
-
-    return retorno;
-}
-
-int loge_set_date(LogEntry* this, char* texto)
-{
-    int retorno =0;
-
-    if(this!=NULL)
-    {
-        strcpy(this->date,texto);
-        retorno =1;
-    }
-
-    return retorno;
-}
-
-int loge_set_time(LogEntry* this, char* texto)
-{
-    int retorno =0;
-
-    if(this!=NULL)
-    {
-        strcpy(this->time,texto);
-        retorno =1;
-    }
-
-    return retorno;
-}
-
-
 int serv_set_name(Service* this, char* texto)
 {
     int retorno =0;
@@ -290,18 +92,6 @@ int serv_set_name(Service* this, char* texto)
     return retorno;
 }
 
-int serv_set_email(Service* this, char* texto)
-{
-    int retorno =0;
-
-    if(this!=NULL)
-    {
-        strcpy(this->email,texto);
-        retorno =1;
-    }
-
-    return retorno;
-}
 
 
 
@@ -411,44 +201,6 @@ Est1* est1_SetDatos(int entero, char* texto, float flotante, long int largo)
 }
 
 
-LogEntry* loge_SetDatos(char* date, char* time, int serviceId, int gravedad, char* msg  )
-{
-
-    LogEntry* nuevo;
-    nuevo= loge_nuevo();
-
-    if (nuevo!= NULL)
-    {
-        confirma_set(loge_set_date(nuevo,date));
-        confirma_set(loge_set_time(nuevo, time));
-        confirma_set(loge_set_serviceId(nuevo, serviceId));
-        confirma_set(loge_set_gravedad(nuevo, gravedad));
-        confirma_set(loge_set_msg(nuevo, msg));
-
-    }
-
-    return nuevo;
-
-}
-
-
-Service* serv_SetDatos(int id, char* name, char* email)
-{
-
-    Service* nuevo;
-    nuevo= serv_nuevo();
-
-    if (nuevo!= NULL)
-    {
-        confirma_set(serv_set_id(nuevo,id));
-        confirma_set(serv_set_name(nuevo, name));
-        confirma_set(serv_set_email(nuevo, email));
-
-    }
-
-    return nuevo;
-
-}
 
 int est1_compareTexto(void* datoA,void* datoB)
 {
@@ -508,17 +260,8 @@ void est1_print(Est1* this)
 
 
 
-void serv_print(Service* this)
-{
-    printf("%10d\t%15s\t%15s\n", serv_get_id(this),serv_get_name(this),serv_get_email(this));
 
-}
 
-void loge_print(LogEntry* this)
-{
-    printf("%10s\t%15s\t%15d\t%10d\t%15s\n", loge_get_date(this),loge_get_time(this),loge_get_serviceId(this),loge_get_gravedad(this),loge_get_msg(this));
-
-}
 
 
 

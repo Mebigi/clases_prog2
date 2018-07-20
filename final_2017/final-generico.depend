@@ -114,18 +114,20 @@
 
 1530457681 c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\arraylist.h
 
-1532044454 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\controlador.c
+1532098667 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\controlador.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"est1.h"
+	"loge.h"
+	"service.h"
 	"ArrayList.h"
 	"ingresodatos.h"
 	"Controlador.h"
 	"manejadorDatos.h"
 
-1532027710 c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\est1.h
+1532093186 c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\est1.h
 	"ArrayList.h"
 
 1531950957 c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\ingresodatos.h
@@ -142,48 +144,86 @@
 	<ctype.h>
 	<conio.h>
 
-1532037124 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\main.c
+1532097570 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"est1.h"
+	"loge.h"
+	"service.h"
 	"vista.h"
 	"ArrayList.h"
 	"ingresodatos.h"
 	"Controlador.h"
 	"manejadorDatos.h"
 
-1532007159 c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\vista.h
+1532093665 c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\vista.h
 
-1532033030 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\manejadordatos.c
+1532093288 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\manejadordatos.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"est1.h"
+	"loge.h"
+	"service.h"
 	"ArrayList.h"
 	"ingresodatos.h"
 	"Controlador.h"
 	"manejadorDatos.h"
 
-1532006050 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\vista.c
+1532093288 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\vista.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"est1.h"
+	"loge.h"
+	"service.h"
 	"ArrayList.h"
 	"ingresodatos.h"
 	"Controlador.h"
 	"manejadorDatos.h"
 
-1532029974 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\est1.c
+1532093287 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\est1.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"est1.h"
+	"loge.h"
+	"service.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532093526 c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\loge.h
+
+1532093474 c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\service.h
+
+1532093402 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\loge.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"loge.h"
+	"service.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532093402 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\service.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"loge.h"
+	"service.h"
 	"ArrayList.h"
 	"ingresodatos.h"
 	"Controlador.h"
