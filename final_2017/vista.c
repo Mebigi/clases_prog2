@@ -94,6 +94,131 @@ int vista_opcion(char mensaje[], int min, int max)
     return numero;
 }
 
+////////////////PRINT//////////////////////////////////////
+
+int opcionPrintListado(ArrayList* this, char* encabezado)
+{
+    int retorno=0;
+
+    if (this!= NULL && !(al_isEmpty(this)))
+    {
+        printf("\n%s\n", encabezado);
+        est1_print_all(this);
+        retorno=1;
+    }
+
+    return retorno;
+}
+
+int opcionPrintListadoLogEntry(ArrayList* this, char* encabezado)
+{
+    int retorno=0;
+
+    if (this!= NULL && !(al_isEmpty(this)))
+    {
+        printf("\n%s\n", encabezado);
+        loge_print_all(this);
+        retorno=1;
+    }
+
+    return retorno;
+}
+
+int opcionPrintListadoService(ArrayList* this, char* encabezado)
+{
+    int retorno=0;
+
+    if (this!= NULL && !(al_isEmpty(this)))
+    {
+        printf("\n%s\n", encabezado);
+        serv_print_all(this);
+        retorno=1;
+    }
+
+    return retorno;
+}
+
+
+
+void est1_print_all(ArrayList* this)
+{
+
+    if(this != NULL)
+    {
+        Est1* aux;
+        int len;
+
+        len=al_len(this);
+
+        for (int i=0; i<len; i++)
+        {
+            aux = (Est1*)al_get(this, i);//apunta
+
+            est1_print(aux);
+            if(i%100==0 && i>0)
+            {
+                printf("\n\n");
+                system("pause");
+            }
+
+        }
+    }
+
+}
+
+
+
+void loge_print_all(ArrayList* this)
+{
+
+    if(this != NULL)
+    {
+        LogEntry* aux;
+        int len;
+
+        len=al_len(this);
+
+        for (int i=0; i<len; i++)
+        {
+            aux = (LogEntry*)al_get(this, i);//apunta
+
+            loge_print(aux);
+            if(i%100==0 && i>0)
+            {
+                printf("\n\n");
+                system("pause");
+            }
+
+        }
+    }
+
+}
+
+void serv_print_all(ArrayList* this)
+{
+
+    if(this != NULL)
+    {
+        Service* aux;
+        int len;
+
+        len=al_len(this);
+
+        for (int i=0; i<len; i++)
+        {
+            aux = (Service*)al_get(this, i);//apunta
+
+            serv_print(aux);
+            if(i%100==0 && i>0)
+            {
+                printf("\n\n");
+                system("pause");
+            }
+
+        }
+    }
+
+}
 
 
 

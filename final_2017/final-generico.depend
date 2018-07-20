@@ -114,7 +114,7 @@
 
 1530457681 c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\arraylist.h
 
-1532098667 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\controlador.c
+1532098997 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\controlador.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -173,7 +173,7 @@
 	"Controlador.h"
 	"manejadorDatos.h"
 
-1532093288 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\vista.c
+1532098997 source:c:\1ercuatrimestretecnicatura\clases_prog2\final_2017\vista.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
