@@ -1,0 +1,207 @@
+# depslib dependency file v1.0
+1530495645 source:c:\programacion1cuatri\finales\modelo\final-generico\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530457681 c:\programacion1cuatri\finales\modelo\final-generico\arraylist.h
+
+1531615553 source:c:\programacion1cuatri\finales\modelo\final-generico\main.c
+	<stdio.h>
+	<stdlib.h>
+	"est1.h"
+	"ArrayList.h"
+
+1531620828 c:\programacion1cuatri\finales\modelo\final-generico\est1.h
+	"ArrayList.h"
+
+1531620841 source:c:\programacion1cuatri\finales\modelo\final-generico\est1.c
+	"est1.h"
+	"ArrayList.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1532008389 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530457681 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\arraylist.h
+
+1532007732 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"vista.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532005750 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\est1.h
+	"ArrayList.h"
+
+1532007347 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\est1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1531950906 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1531950957 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\ingresodatos.h
+
+1532003929 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\controlador.h
+
+1532006662 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532008467 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1531920407 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\manejadordatos.h
+
+1532006050 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532007159 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\vista.h
+
+1532008389 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530457681 c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\arraylist.h
+
+1532117297 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"producto.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532108176 c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\est1.h
+	"ArrayList.h"
+
+1531950957 c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\ingresodatos.h
+
+1532108407 c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\controlador.h
+
+1532109600 c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\manejadordatos.h
+
+1532007347 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\est1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1531950906 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1532117297 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"producto.h"
+	"vista.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532115425 c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\vista.h
+
+1532114992 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"producto.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532111470 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"producto.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532111593 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\producto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"producto.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"manejadorDatos.h"
+
+1532108595 c:\1ercuatrimestretecnicatura\clases_prog2\final-nuevo\producto.h
+
