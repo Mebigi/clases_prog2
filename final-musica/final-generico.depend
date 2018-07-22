@@ -1,0 +1,234 @@
+# depslib dependency file v1.0
+1530495645 source:c:\programacion1cuatri\finales\modelo\final-generico\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530457681 c:\programacion1cuatri\finales\modelo\final-generico\arraylist.h
+
+1531615553 source:c:\programacion1cuatri\finales\modelo\final-generico\main.c
+	<stdio.h>
+	<stdlib.h>
+	"est1.h"
+	"ArrayList.h"
+
+1531620828 c:\programacion1cuatri\finales\modelo\final-generico\est1.h
+	"ArrayList.h"
+
+1531620841 source:c:\programacion1cuatri\finales\modelo\final-generico\est1.c
+	"est1.h"
+	"ArrayList.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1532008389 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530457681 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\arraylist.h
+
+1532007732 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"vista.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532005750 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\est1.h
+	"ArrayList.h"
+
+1532007347 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\est1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1531950906 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1531950957 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\ingresodatos.h
+
+1532003929 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\controlador.h
+
+1532006662 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532008467 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1531920407 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\manejadordatos.h
+
+1532006050 source:c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532007159 c:\1ercuatrimestretecnicatura\clases_prog2\final-generico\vista.h
+
+1532275100 source:c:\programacion1cuatri\clases_prog2\final-musica\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1532275100 c:\programacion1cuatri\clases_prog2\final-musica\arraylist.h
+
+1532300245 source:c:\programacion1cuatri\clases_prog2\final-musica\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"escuchados.h"
+	"usuario.h"
+	"temas.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532275100 c:\programacion1cuatri\clases_prog2\final-musica\est1.h
+	"ArrayList.h"
+
+1532275100 c:\programacion1cuatri\clases_prog2\final-musica\ingresodatos.h
+
+1532282253 c:\programacion1cuatri\clases_prog2\final-musica\controlador.h
+
+1532275100 c:\programacion1cuatri\clases_prog2\final-musica\manejadordatos.h
+
+1532275100 source:c:\programacion1cuatri\clases_prog2\final-musica\est1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532275100 source:c:\programacion1cuatri\clases_prog2\final-musica\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1532300559 source:c:\programacion1cuatri\clases_prog2\final-musica\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"escuchados.h"
+	"usuario.h"
+	"temas.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532280396 source:c:\programacion1cuatri\clases_prog2\final-musica\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532296329 source:c:\programacion1cuatri\clases_prog2\final-musica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"usuario.h"
+	"temas.h"
+	"vista.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532302825 c:\programacion1cuatri\clases_prog2\final-musica\vista.h
+
+1532285530 c:\programacion1cuatri\clases_prog2\final-musica\usuario.h
+
+1532286975 c:\programacion1cuatri\clases_prog2\final-musica\temas.h
+
+1532285936 source:c:\programacion1cuatri\clases_prog2\final-musica\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"usuario.h"
+	"temas.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532288300 source:c:\programacion1cuatri\clases_prog2\final-musica\temas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"usuario.h"
+	"temas.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532300063 source:c:\programacion1cuatri\clases_prog2\final-musica\escuchados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"temas.h"
+	"usuario.h"
+	"escuchados.h"
+
+1532296856 c:\programacion1cuatri\clases_prog2\final-musica\escuchados.h
+
