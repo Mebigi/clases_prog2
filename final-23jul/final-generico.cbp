@@ -54,10 +54,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="manejadorDatos.h" />
-		<Unit filename="producto.c">
+		<Unit filename="reparto.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="producto.h" />
+		<Unit filename="reparto.h" />
 		<Unit filename="vista.c">
 			<Option compilerVar="CC" />
 		</Unit>

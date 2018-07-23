@@ -351,9 +351,6 @@ if(this!= NULL && !(al_isEmpty(this)))
     int cont=0;
 
 
-
-
-
    for(int j=0;j<al_len(this);j++)
     {
         cont=0; //se reinicia en cada loop
@@ -417,8 +414,7 @@ char* combo_loc(ArrayList* localidades)
 
 
     if(strcmp((char*)aux->localidad,ingresada)==0)
-    { printf("%s\n", aux->localidad);
-    printf("%s\n", ingresada);
+    {
         strcpy(localidad,ingresada);
 
 
@@ -480,7 +476,9 @@ int reparto_localidad(ArrayList* this, char* loc)//this entrega0 this23 entreda1
          if(localidadfiltrada!= NULL)
             {
 
-                md_guardar_Entrega(localidadfiltrada, "localidad.csv");
+
+                strcat(loc,".csv");
+                md_guardar_Entrega(localidadfiltrada, loc);
 
             }
         else{

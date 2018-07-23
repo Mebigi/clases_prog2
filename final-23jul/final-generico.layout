@@ -2,39 +2,19 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="vista.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ingresodatos.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="208" topLine="0" />
+			<Cursor1 position="25" topLine="33" />
 		</Cursor>
 	</File>
-	<File name="vista.c" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="vista.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1929" topLine="95" />
 		</Cursor>
 	</File>
-	<File name="producto.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="86" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="producto.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3467" topLine="154" />
-		</Cursor>
-	</File>
-	<File name="manejadorDatos.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="manejadorDatos.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="36" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="manejadorDatos.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="974" topLine="92" />
-		</Cursor>
-	</File>
-	<File name="main.c" open="1" top="1" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1907" topLine="10" />
 		</Cursor>
 	</File>
 	<File name="ingresodatos.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -42,29 +22,24 @@
 			<Cursor1 position="5019" topLine="168" />
 		</Cursor>
 	</File>
-	<File name="ingresodatos.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="manejadorDatos.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="25" topLine="33" />
+			<Cursor1 position="974" topLine="92" />
 		</Cursor>
 	</File>
-	<File name="est1.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="121" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="est1.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="est1.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="397" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Controlador.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="est1.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="624" topLine="14" />
+			<Cursor1 position="121" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Controlador.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ArrayList.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7683" topLine="409" />
+			<Cursor1 position="2082" topLine="88" />
 		</Cursor>
 	</File>
 	<File name="ArrayList.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -72,9 +47,24 @@
 			<Cursor1 position="8047" topLine="200" />
 		</Cursor>
 	</File>
-	<File name="ArrayList.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Controlador.c" open="1" top="1" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2082" topLine="88" />
+			<Cursor1 position="7268" topLine="408" />
+		</Cursor>
+	</File>
+	<File name="Controlador.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="624" topLine="14" />
+		</Cursor>
+	</File>
+	<File name="vista.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="206" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1902" topLine="10" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

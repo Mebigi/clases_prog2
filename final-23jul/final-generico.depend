@@ -307,3 +307,115 @@
 	"ingresodatos.h"
 	"manejadorDatos.h"
 
+1532377880 source:c:\programacion1cuatri\clases_prog2\final-23jul\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"reparto.h"
+
+1532377880 c:\programacion1cuatri\clases_prog2\final-23jul\arraylist.h
+
+1532377880 c:\programacion1cuatri\clases_prog2\final-23jul\reparto.h
+
+1532377880 source:c:\programacion1cuatri\clases_prog2\final-23jul\est1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532377880 c:\programacion1cuatri\clases_prog2\final-23jul\est1.h
+	"ArrayList.h"
+
+1532377880 c:\programacion1cuatri\clases_prog2\final-23jul\ingresodatos.h
+
+1532377880 c:\programacion1cuatri\clases_prog2\final-23jul\controlador.h
+
+1532377880 c:\programacion1cuatri\clases_prog2\final-23jul\manejadordatos.h
+
+1532377880 source:c:\programacion1cuatri\clases_prog2\final-23jul\ingresodatos.c
+	"ingresodatos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1532377880 source:c:\programacion1cuatri\clases_prog2\final-23jul\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"reparto.h"
+	"vista.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532377880 c:\programacion1cuatri\clases_prog2\final-23jul\vista.h
+
+1532377880 source:c:\programacion1cuatri\clases_prog2\final-23jul\manejadordatos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"reparto.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532377880 source:c:\programacion1cuatri\clases_prog2\final-23jul\producto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"producto.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"manejadorDatos.h"
+
+1532377880 c:\programacion1cuatri\clases_prog2\final-23jul\producto.h
+
+1532377880 source:c:\programacion1cuatri\clases_prog2\final-23jul\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"reparto.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532378099 source:c:\programacion1cuatri\clases_prog2\final-23jul\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"est1.h"
+	"Reparto.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"Controlador.h"
+	"manejadorDatos.h"
+
+1532377880 source:c:\programacion1cuatri\clases_prog2\final-23jul\reparto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"reparto.h"
+	"ArrayList.h"
+	"ingresodatos.h"
+	"manejadorDatos.h"
+
