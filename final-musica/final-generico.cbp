@@ -39,10 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Controlador.h" />
-		<Unit filename="est1.c">
+		<Unit filename="escuchados.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="est1.h" />
+		<Unit filename="escuchados.h" />
 		<Unit filename="ingresodatos.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -54,6 +54,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="manejadorDatos.h" />
+		<Unit filename="temas.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="temas.h" />
 		<Unit filename="usuario.c">
 			<Option compilerVar="CC" />
